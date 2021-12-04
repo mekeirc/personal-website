@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>WeightliftingIcon</title>
+    <g id="HiFi" stroke="none" stroke-width="1" fill="none" fillRule="evenodd">
+        <g id="Desktop-HD-Copy" transform="translate(-381.000000, -1656.000000)">
+            <g id="WeightliftingIcon" transform="translate(381.000000, 1656.000000)">
+                <rect id="Rectangle" x="0" y="0" width="48" height="48"></rect>
+                <rect id="Rectangle" fill="#121621" x="5" y="16" width="4" height="18" rx="2"></rect>
+                <rect id="Rectangle" fill="#121621" x="39" y="16" width="4" height="18" rx="2"></rect>
+                <rect id="Rectangle" fill="#121621" x="0" y="22" width="4" height="6" rx="2"></rect>
+                <rect id="Rectangle" fill="#121621" x="44" y="22" width="4" height="6" rx="2"></rect>
+                <rect id="Rectangle" fill="#121621" x="10" y="11" width="4" height="26" rx="2"></rect>
+                <rect id="Rectangle" fill="#121621" transform="translate(36.000000, 24.000000) rotate(-180.000000) translate(-36.000000, -24.000000) " x="34" y="11" width="4" height="26" rx="2"></rect>
+                <polygon id="Path" fill="#121621" points="14 22 34 22 34 28 14 28"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

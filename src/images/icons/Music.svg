@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 3</title>
+    <g id="HiFi" stroke="none" stroke-width="1" fill="none" fillRule="evenodd">
+        <g id="Desktop-HD-Copy" transform="translate(-1022.000000, -1648.000000)">
+            <g id="Group-3" transform="translate(1022.000000, 1648.000000)">
+                <rect id="Rectangle-Copy-5" x="0" y="0" width="48" height="48"></rect>
+                <g id="Group" transform="translate(2.000000, 5.766627)">
+                    <ellipse id="Oval" fill="#000000" fillRule="nonzero" cx="6.5" cy="33.7333729" rx="6.5" ry="5.5"></ellipse>
+                    <ellipse id="Oval" fill="#000000" fillRule="nonzero" cx="32" cy="28.7333729" rx="7" ry="5.5"></ellipse>
+                    <path d="M9,6.14641637 L13,6.14641637 L13,34.1464164 L9,34.1464164 L9,6.14641637 Z M34.5,0.233372891 L39,0.233372891 L39,28.3203294 L34.5,28.3203294 L34.5,0.233372891 Z" id="Shape" fill="#000000" fillRule="nonzero"></path>
+                    <line x1="11" y1="6.23337289" x2="36.972387" y2="4.32527132e-17" id="Path" stroke="#000000" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"></line>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

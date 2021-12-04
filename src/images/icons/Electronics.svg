@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 7 Copy</title>
+    <g id="HiFi" stroke="none" stroke-width="1" fill="none" fillRule="evenodd">
+        <g id="Desktop-HD-Copy" transform="translate(-695.000000, -1648.000000)">
+            <g id="Group-7-Copy" transform="translate(695.000000, 1648.000000)">
+                <rect id="Rectangle-Copy-3" x="0" y="0" width="48" height="48"></rect>
+                <g id="Group" transform="translate(0.000000, 10.000000)" fillRule="nonzero">
+                    <path d="M0,23 L48,23 L48,25.4 C48,27.3882251 46.3882251,29 44.4,29 L3.6,29 C1.6117749,29 0,27.3882251 0,25.4 L0,23 L0,23 Z" id="Path" fill="#0E141C"></path>
+                    <path d="M39.6,0.5 C40.1236366,0.5 40.5972682,0.716898174 40.9402743,1.06625624 C41.2865705,1.41896536 41.5,1.9064365 41.5,2.44444444 L41.5,2.44444444 L41.5,21.5 L6.5,21.5 L6.5,2.44444444 C6.5,1.9064365 6.71342948,1.41896536 7.05972571,1.06625624 C7.40273181,0.716898174 7.87636339,0.5 8.4,0.5 L8.4,0.5 Z" id="Path" stroke="#0E141C" fill="#FFFFFF"></path>
+                    <rect id="Rectangle" fill="#FFFFFF" x="18" y="25" width="12" height="1" rx="0.5"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
