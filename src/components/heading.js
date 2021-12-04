@@ -1,5 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
+import PropTypes from 'prop-types';
 
 const StyledH1 = styled.h1(({ theme, color }) => css`
     color: ${theme.colors[color]};
@@ -48,4 +49,15 @@ export const Heading = ({ children, as, color, className }) => {
     return <StyledH1 color={ color } className={ className }>{ children }</StyledH1>;
 }
 
+Heading.propTypes = {
+    as: PropTypes.string,
+    color: PropTypes.string,
+}
+
+Heading.defaultProps = {
+    as: 'h2',
+    color: 'sunburstOrange',
+}
+
 export default Heading;
+
