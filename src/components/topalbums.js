@@ -1,23 +1,21 @@
 import React from 'react';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import Paragraph from './paragraph';
 import { Section } from './layout';
 import Heading from './heading';
-import { apiKey, apiUser, apiFormat, extendedApi } from '../constants';
+import { apiKey, apiUser, apiFormat, extendedApi, apiLimit } from '../constants';
+import fallbackImage from '../images/fallbackimage.png';
 
-const MobileView = styled.div(({ theme }) => css`
+const MobileView = styled.div(({ isToggled }) => css`
     display: flex;
     overflow-x: scroll;
-    flex-wrap: nowrap;
+    flex-wrap: ${isToggled ? 'wrap' : 'nowrap'};
 
     -webkit-overflow-scrolling: touch;
-
-    @media screen and (min-width: ${theme.breakPoints.md}){
-        ::-webkit-scrollbar {
-            display: none;
-        }
+    ::-webkit-scrollbar {
+        display: none;
     }
 
     .clipped {
@@ -27,8 +25,35 @@ const MobileView = styled.div(({ theme }) => css`
     }
 `);
 
-const TopAlbums = () => {
+const Button = styled.button(({ theme }) => css`
+    background: ${theme.colors.burntOrange};
+    border: 0;
+    padding: 10px;
+    color: ${theme.colors.white};
+    font-size: 20px;
+    border-radius: 4px;
+    width: 250px;
+`);
+
+const LinkButton = styled.a(({ theme }) => css`
+    color: ${theme.colors.burntOrange};
+    font-size: 20px;
+    cursor: pointer;
+
+    &:hover, &:active, &:focus {
+        color: ${theme.colors.black};
+    }
+`);
+
+const TopAlbums = ({ expanded }) => {
     const [topAlbums, setTopAlbums] = useState([]);
+    const [isToggled, setIsToggled] = useState(false);
+
+    const showAll = useCallback(
+        () => setIsToggled(!isToggled),
+        [isToggled, setIsToggled],
+      );
+
     useEffect(() => {
         fetch(`
                 https://ws.audioscrobbler.com/2.0/?method=user.gettopalbums
@@ -36,7 +61,7 @@ const TopAlbums = () => {
                 &api_key=${apiKey}
                 &format=${apiFormat}
                 &extended=${extendedApi}
-                &limit=16
+                &limit=${apiLimit}
             `)
           .then(res => res.json())
           .then(response => {
@@ -51,12 +76,18 @@ const TopAlbums = () => {
     return (
         <React.Fragment>
             <Section className="d-flex flex-column pt-0">
-            <Heading as="h3">Top Albums</Heading>
-            <MobileView className="row">
+                <div className="d-flex justify-content-between align-items-baseline">
+                    <Heading as="h3" color="burntOrange">Top Albums</Heading>
+                    <LinkButton onClick={ showAll } className="d-none d-md-inline">Show {isToggled ? 'Less' : 'More'}</LinkButton>
+                </div>
+            <MobileView className="row" isToggled={ isToggled }>
                 {topAlbums.map((ta, index) => (
-                    <div className="col-11 col-sm-5 col-md-3 col-xl-2 mb-5" key={ index }>
+                    <div className="col-7 col-sm-5 col-md-3 col-xl-2 mb-5" key={ index }>
                         <div className="d-flex flex-column">
-                            <img src={ta.image[3]['#text']} alt="Album Cover" className="rounded" />
+                            <picture>
+                                <source srcSet={ta.image[3]['#text']} type="image/jpg" className="rounded w-100" />
+                                <img src={ fallbackImage } alt="fall back jpg called" className="w-100" />
+                            </picture>
                             <Paragraph color="black" className="mt-3 mb-2">{ta.name}</Paragraph>
                             <Paragraph color="burntOrange" className="mb-2 clipped">{ta.artist.name}</Paragraph>
                             <Paragraph className="mb-0">{ta.album}</Paragraph>

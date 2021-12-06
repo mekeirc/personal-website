@@ -38,8 +38,8 @@ const Skills = () => (
         </div>
         <Section background="almostBlack" className="row">
             <div className="d-flex align-items-center justify-content-center flex-column">
-                <Heading as="h4" color="white">Skill Cloud</Heading>
-                <div className="w-100 d-flex flex-wrap">
+                <Heading as="h4" color="white" className="mb-4">Skill Cloud</Heading>
+                <div className="w-100 d-flex flex-wrap align-items-start">
                     <div className="col-12 col-md-6 d-inline-flex justify-content-center justify-content-md-end pe-2 flex-wrap align-items-start">
                         <Badge text="UI Design" className="me-2" />
                         <Badge text="UX Design" className="me-2" />
@@ -51,16 +51,20 @@ const Skills = () => (
                         <Badge text="SVG Illustration" className="me-2" />
                     </div>
                     <div className="col-12 col-md-6 d-inline-flex justify-content-center justify-content-md-start ps-2 flex-wrap align-items-start">
-                        <Badge text="UI Design" borderColor="white" className="ms-2" />
-                        <Badge text="UI Design" borderColor="white" className="ms-2" />
-                        <Badge text="UI Design" borderColor="white" className="ms-2" />
-                        <Badge text="UI Design" borderColor="white" className="ms-2" />
-                        <Badge text="UI Design" borderColor="white" className="ms-2" />
-                        <Badge text="UI Design" borderColor="white" className="ms-2" />
-                        <Badge text="UI Design" borderColor="white" className="ms-2" />
-                        <Badge text="UI Design" borderColor="white" className="ms-2" />
-                        <Badge text="UI Design" borderColor="white" className="ms-2" />
-                        <Badge text="UI Design" borderColor="white" className="ms-2" />
+                        <Badge text="ReactJS" borderColor="white" className="ms-2" />
+                        <Badge text="git" borderColor="white" className="ms-2" />
+                        <Badge text="HTML" borderColor="white" className="ms-2" />
+                        <Badge text="CSS / SCSS / SASS" borderColor="white" className="ms-2" />
+                        <Badge text="ES6 Javascript" borderColor="white" className="ms-2" />
+                        <Badge text="React Redux" borderColor="white" className="ms-2" />
+                        <Badge text="REST" borderColor="white" className="ms-2" />
+                        <Badge text="npm" borderColor="white" className="ms-2" />
+                        <Badge text="JSON" borderColor="white" className="ms-2" />
+                        <Badge text="JIRA / VSTS" borderColor="white" className="ms-2" />
+                        <Badge text="Agile" borderColor="white" className="ms-2" />
+                        <Badge text="Docker" borderColor="white" className="ms-2" />
+                        <Badge text="CI / CD" borderColor="white" className="ms-2" />
+                        <Badge text="Bootstrap" borderColor="white" className="ms-2" />
                     </div>
                 </div>
             </div>

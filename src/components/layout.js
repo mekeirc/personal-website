@@ -8,17 +8,14 @@ import AboutMe from './aboutme';
 import Skills from './skills';
 import RecentTracks from './recenttracks';
 import TopAlbums from './topalbums';
+import Experience from './experience';
 
-const ErrorFallback = ({ error }) => (
-    <div role="alert">
-      <p>Something went wrong:</p>
-      <pre style={{color: 'red'}}>{error.message}</pre>
-    </div>
-);
-
-export const Section = styled.section(({ theme, background }) => css`
+export const Section = styled.section(({ theme, background, bordered }) => css`
     background: ${theme.colors[background]};
     font-family: 'Cerebri Sans';
+
+    border-top: ${bordered ? `1px solid ${theme.colors.greyBorder}` : '0'};
+    border-bottom: ${bordered ? `1px solid ${theme.colors.greyBorder}` : '0'};
 
     padding: 32px;
     @media screen and (min-width: ${theme.breakPoints.md}) {
@@ -72,6 +69,7 @@ const Layout = () => (
         <RecentTracks />
         <TopAlbums />
         <Skills />
+        <Experience />
     </React.Fragment> 
 );
  
