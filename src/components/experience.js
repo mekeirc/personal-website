@@ -29,7 +29,7 @@ const Work = ({ role, company, duration }) => (
 
 const Experience = () => (
     <React.Fragment>
-        <Section className="pb-0">
+        <Section className="pb-0" id="experience">
             <MaxWidthContainer>
                 <Heading as="h2" color="burntOrange">Experience</Heading>
             </MaxWidthContainer>

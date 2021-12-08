@@ -15,7 +15,7 @@ const ImageContainer = styled.div(({ theme, bgColor }) => css`
 `);
 
 const Portfolio = () => (
-    <div className="container-fluid">
+    <div className="container-fluid" id="portfolio">
         <Section background="black" className="row">
             <MaxWidthContainer>
                 <Heading as="h2" color="white" className="text-center">Portfolio &amp; Demos</Heading>

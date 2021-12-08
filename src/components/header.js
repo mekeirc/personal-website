@@ -39,10 +39,10 @@ const Header = () => (
         </div>
         <div className="d-none d-lg-block">
             <NavItem className="mr-4" href="#" alt="nav item">Home</NavItem>
-            <NavItem href="#" alt="nav item">About</NavItem>
-            <NavItem href="#" alt="nav item">Skills</NavItem>
-            <NavItem href="#" alt="nav item">Experience</NavItem>
-            <NavItem href="#" alt="nav item">Portfolio &amp; Demos</NavItem>
+            <NavItem href="#about" alt="nav item">About</NavItem>
+            <NavItem href="#skills" alt="nav item">Skills</NavItem>
+            <NavItem href="#experience" alt="nav item">Experience</NavItem>
+            <NavItem href="#portfolio" alt="nav item">Portfolio &amp; Demos</NavItem>
         </div>
     </div>
 );
