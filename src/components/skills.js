@@ -1,7 +1,7 @@
 import React from 'react';
 import Heading from './heading';
 import ProgressBar from './progressbar';
-import { Section } from './layout';
+import { Section } from './homepage';
 import Badge from './badge';
 
 const Skills = () => (
@@ -36,7 +36,7 @@ const Skills = () => (
                 </Section>
             </div>
         </div>
-        <Section background="almostBlack" className="row">
+        <Section background="almostBlack" className="row" fullWidth>
             <div className="d-flex align-items-center justify-content-center flex-column">
                 <Heading as="h4" color="white" className="mb-4">Skill Cloud</Heading>
                 <div className="w-100 d-flex flex-wrap align-items-start">

@@ -3,10 +3,11 @@ import { useState, useEffect, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import Paragraph from './paragraph';
-import { Section } from './layout';
+import { Section } from './homepage';
 import Heading from './heading';
 import { apiKey, apiUser, apiFormat, extendedApi, apiLimit } from '../constants';
 import fallbackImage from '../images/fallbackimage.png';
+import { MaxWidthContainer } from './homepage';
 
 const MobileView = styled.div(({ isToggled }) => css`
     display: flex;
@@ -65,26 +66,28 @@ const RecentTracks = () => {
 
     return (
         <React.Fragment>
-            <Section className="d-flex flex-column">
-            <div className="d-flex justify-content-between align-items-baseline">
-                <Heading as="h3" color="burntOrange">Recent Tracks</Heading>
-                <LinkButton onClick={ showAll } className="d-none d-md-inline">Show {isToggled ? 'Less' : 'More'}</LinkButton>
-            </div>
-            <MobileView className="row" isToggled={ isToggled }>
-                {recentTracks.map((rt, index) => (
-                    <div className="col-7 col-sm-5 col-md-3 col-xl-2 mb-5" key={ index }>
-                        <div className="d-flex flex-column">
-                            <picture>
-                                <source srcSet={rt.image[3]['#text']} type="image/jpg" className="rounded w-100" />
-                                <img src={ fallbackImage } alt="fall back jpg called" className="w-100" />
-                            </picture>
-                            <Paragraph color="black" className="mt-3 mb-2 clipped">{rt.name}</Paragraph>
-                            <Paragraph color="burntOrange" className="mb-2 clipped">{rt.artist.name}</Paragraph>
-                            <Paragraph className="mb-0 clipped">{rt.album['#text']}</Paragraph>
-                        </div>
+            <Section className="d-flex flex-column mb-64" background="lightGrey" bordered>
+                <MaxWidthContainer>
+                    <div className="d-flex justify-content-between align-items-baseline">
+                        <Heading as="h3" color="burntOrange">Recent Tracks</Heading>
+                        <LinkButton onClick={ showAll } className="d-none d-md-inline">Show {isToggled ? 'Less' : 'More'}</LinkButton>
                     </div>
-                ))}
-                </MobileView>
+                    <MobileView className="row" isToggled={ isToggled }>
+                        {recentTracks.map((rt, index) => (
+                            <div className="col-7 col-sm-5 col-md-3 col-xl-2 mb-5" key={ index }>
+                                <div className="d-flex flex-column">
+                                    <picture>
+                                        <source srcSet={rt.image[3]['#text']} type="image/jpg" />
+                                        <img src={ fallbackImage } alt="fall back jpg called" className="w-100 rounded" />
+                                    </picture>
+                                    <Paragraph color="black" className="mt-3 mb-2 clipped">{rt.name}</Paragraph>
+                                    <Paragraph color="burntOrange" className="mb-2 clipped">{rt.artist.name}</Paragraph>
+                                    <Paragraph className="mb-0 clipped">{rt.album['#text']}</Paragraph>
+                                </div>
+                            </div>
+                        ))}
+                        </MobileView>
+                </MaxWidthContainer>
             </Section>
         </React.Fragment>
     )

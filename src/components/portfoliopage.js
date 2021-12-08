@@ -9,18 +9,19 @@ import Skills from './skills';
 import RecentTracks from './recenttracks';
 import TopAlbums from './topalbums';
 import Experience from './experience';
+import Portfolio from './portfolio';
 
 export const Section = styled.section(({ theme, background, bordered }) => css`
     background: ${theme.colors[background]};
     font-family: 'Cerebri Sans';
 
-    border-top: ${bordered ? `1px solid ${theme.colors.greyBorder}` : '0'};
-    border-bottom: ${bordered ? `1px solid ${theme.colors.greyBorder}` : '0'};
-
     padding: 32px;
     @media screen and (min-width: ${theme.breakPoints.md}) {
         padding: 64px;
     }
+
+    border-top: ${bordered ? `1px solid ${theme.colors.greyBorder}` : '0'};
+    border-bottom: ${bordered ? `1px solid ${theme.colors.greyBorder}` : '0'};
 
     .pt-32 { padding-top: 32px; }
     .pb-32 { padding-bottom: 32px; }
@@ -30,7 +31,7 @@ export const Section = styled.section(({ theme, background, bordered }) => css`
     .pb-128, &.pb-128 { padding-bottom: 128px; }
 `);
 
-const Layout = () => (
+const PortfolioPage = () => (
     <React.Fragment>
         <Section
             background="black"
@@ -62,15 +63,7 @@ const Layout = () => (
                 </div>
             </div>
         </Section>
-        <Section background="white" id="about">
-            <AboutMe />
-            <Hobbies />
-        </Section>
-        <RecentTracks />
-        <TopAlbums />
-        <Skills />
-        <Experience />
     </React.Fragment> 
 );
  
-export default Layout;
+export default PortfolioPage;
