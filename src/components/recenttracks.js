@@ -74,14 +74,14 @@ const RecentTracks = () => {
                     </div>
                     <MobileView className="row" isToggled={ isToggled }>
                         {recentTracks.map((rt, index) => (
-                            <div className="col-7 col-sm-5 col-md-3 col-xl-2 mb-5" key={ index }>
+                            <div className="col-5 col-sm-4 col-md-3 col-xl-2 mb-5" key={ index }>
                                 <div className="d-flex flex-column">
                                     <picture>
                                         <source srcSet={rt.image[3]['#text']} type="image/jpg" />
                                         <img src={ fallbackImage } alt="fall back jpg called" className="w-100 rounded" />
                                     </picture>
-                                    <Paragraph color="black" className="mt-3 mb-2 clipped">{rt.name}</Paragraph>
-                                    <Paragraph color="burntOrange" className="mb-2 clipped">{rt.artist.name}</Paragraph>
+                                    <Paragraph color="black" className="mt-3 mb-2">{rt.name}</Paragraph>
+                                    <Paragraph color="burntOrange" className="mb-2">{rt.artist.name}</Paragraph>
                                     <Paragraph className="mb-0 clipped">{rt.album['#text']}</Paragraph>
                                 </div>
                             </div>
