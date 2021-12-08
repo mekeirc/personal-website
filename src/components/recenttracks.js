@@ -74,7 +74,7 @@ const RecentTracks = () => {
                     </div>
                     <MobileView className="row" isToggled={ isToggled }>
                         {recentTracks.map((rt, index) => (
-                            <div className="col-5 col-sm-4 col-md-3 col-xl-2 mb-5" key={ index }>
+                            <div className="col-5 col-sm-4 col-md-3 col-xl-2 mb-md-5" key={ index }>
                                 <div className="d-flex flex-column">
                                     <picture>
                                         <source srcSet={rt.image[3]['#text']} type="image/jpg" />
