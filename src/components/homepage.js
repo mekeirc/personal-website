@@ -14,7 +14,7 @@ import Footer from './footer';
 
 export const Section = styled.section(({ theme, background, bordered, lessPadding }) => css`
     background: ${theme.colors[background]};
-    font-family: 'Cerebri Sans';
+    font-family: 'Cerebri-Sans';
 
     padding: 32px;
     @media screen and (min-width: ${theme.breakPoints.md}) {

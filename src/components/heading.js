@@ -7,6 +7,7 @@ const StyledH1 = styled.h1(({ theme, color }) => css`
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 32px;
+    font-family: 'Cerebri-Sans-Bold';
 
     @media screen and (min-width: ${theme.breakPoints.md}) {
         font-size: 50px;
@@ -18,6 +19,7 @@ const StyledH2 = styled.h2(({ theme, color }) => css`
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 32px;
+    font-family: 'Cerebri-Sans-Bold';
 
     @media screen and (min-width: ${theme.breakPoints.md}) {
         font-size: 32px;
@@ -29,6 +31,7 @@ const StyledH3 = styled.h3(({ theme, color }) => css`
     font-size: 24px;
     font-weight: bold;
     margin-bottom: 32px;
+    font-family: 'Cerebri-Sans-Bold';
 
     @media screen and (min-width: ${theme.breakPoints.md}) {
         font-size: 26px;
@@ -39,6 +42,7 @@ const StyledH4 = styled.h4(({ theme, color }) => css`
     color: ${theme.colors[color]};
     font-size: 20px;
     font-weight: bold;
+    font-family: 'Cerebri-Sans-Bold';
 `);
 
 export const Heading = ({ children, as, color, className }) => {

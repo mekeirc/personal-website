@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Cerebri-Sans';
+  src: url('fonts/CerebriSans-Regular.woff');
+}
+
+@font-face {
+  font-family: 'Cerebri-Sans-Bold';
+  src: url('fonts/CerebriSans-Bold.woff');
+}
