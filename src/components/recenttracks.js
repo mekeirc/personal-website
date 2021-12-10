@@ -8,23 +8,7 @@ import Heading from './heading';
 import { apiKey, apiUser, apiFormat, extendedApi, apiLimit } from '../constants';
 import fallbackImage from '../images/fallbackimage.png';
 import { MaxWidthContainer } from '../pages/homepage';
-
-const MobileView = styled.div(({ isToggled }) => css`
-    display: flex;
-    overflow-x: scroll;
-    flex-wrap: ${isToggled ? 'wrap' : 'nowrap'};
-    -webkit-overflow-scrolling: touch;
-    
-    ::-webkit-scrollbar {
-        display: none;
-    }
-
-    .clipped {
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-    }
-`);
+import MobileView from './utilities/mobileview';
 
 const LinkButton = styled.a(({ theme }) => css`
     color: ${theme.colors.burntOrange};

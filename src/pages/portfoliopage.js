@@ -12,6 +12,7 @@ import { HellfireGFXContent } from '../constants/portfolioObjects'
 
 // Images
 import backButton from '../images/backbutton.svg';
+import Portfolio from '../components/portfolio';
 
 const PortfolioPage = () => {
     window.scrollTo(0, 0);
@@ -19,17 +20,17 @@ const PortfolioPage = () => {
     const params = Object.fromEntries(urlSearchParams.entries());
     return (
     <React.Fragment>
-        <Section background="black" lessPadding>
-            <Link to="/" className="text-decoration-none">
-                <div className="d-flex align-items-center">
+        {params.source !== undefined && (
+            <Section background="black" lessPadding>
+                <Link to="/" className="text-decoration-none d-inline-flex align-items-center">
                     <img src={backButton} />
                     <Heading className="mb-0 ms-3">
                         {params.source === queryStrings.HELLFIRE_GFX && 'Hellfire GFX'}
                         {params.source === queryStrings.ADZOOMA && 'Adzooma'}
                     </Heading>
-                </div>
-            </Link>
-        </Section>
+                </Link>
+            </Section>
+        )}
         <Section>
             <MaxWidthContainer>
                 {params.source === queryStrings.ADZOOMA && (
@@ -47,7 +48,13 @@ const PortfolioPage = () => {
                                 <Heading as="h3" color="black" className="mb-3">{images.title}</Heading>
                                 <div className="d-flex mb-3">
                                     {images.tags.map(( tag ) => (
-                                        <Badge className="me-2" small color={tag.color} text={ tag.text } key={ tag.text } />
+                                        <Badge
+                                            small
+                                            className="me-2"
+                                            color={ tag.color }
+                                            text={ tag.text }
+                                            key={ tag.text }
+                                        />
                                     ))}
                                 </div>
                                 <img src={images.image} alt="Image" className="img-fluid pb-64" />
