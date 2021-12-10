@@ -22,7 +22,7 @@ const Work = ({ role, company, duration }) => (
         </div>
         <div className="col-12 col-md-3 pb-2 pb-md-0">
             <Paragraph subtext className="mb-0">Duration</Paragraph>
-            <Heading as="h4" color="darkGrey">{ duration }</Heading>
+            <Paragraph>{ duration }</Paragraph>
         </div>
     </div>
 );

@@ -84,7 +84,7 @@ const TopAlbums = () => {
                     </div>
                     <MobileView className="row" isToggled={ isToggled }>
                         {topAlbums.map((ta, index) => (
-                            <div className="col-5 col-sm-5 col-md-3 col-xl-2 mb-md-5" key={ index }>
+                            <div className={`col-5 col-sm-5 col-md-3 col-xl-2 ${isToggled && 'mb-md-5'}`} key={ index }>
                                 <div className="d-flex flex-column">
                                     <picture>
                                         <source srcSet={ta.image[3]['#text']} type="image/jpg" />

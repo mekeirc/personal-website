@@ -30,6 +30,10 @@ export const MaxWidthContainer = styled.div(({ theme }) => css`
         max-width: 80%;
         margin: auto;
     }
+
+    @media screen and (min-width: ${theme.breakPoints.xxxl}){
+        max-width: 60%;
+    }
 `);
 
 const Layout = () => (

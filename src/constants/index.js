@@ -3,3 +3,8 @@ export const apiUser = 'WiseSan';
 export const apiFormat = 'json';
 export const extendedApi = true;
 export const apiLimit = 24;
+
+export const queryStrings = {
+    ADZOOMA: 'adzooma',
+    RIGHTINDEM: 'rightindem',
+ }

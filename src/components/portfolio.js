@@ -7,6 +7,7 @@ import { UncontrolledCollapse } from 'reactstrap';
 import { Link } from "react-router-dom";
 import Skills from './skills';
 import { MaxWidthContainer } from '../pages/homepage';
+import { queryStrings } from '../constants';
 
 const ImageContainer = styled.div(({ theme, bgColor }) => css`
     background: ${theme.colors[bgColor]};
@@ -45,10 +46,12 @@ const Portfolio = () => (
                         <Heading as="h4" color="white" className="mt-3">Stereocandy</Heading>
                     </div>
                     <div className="col">
-                        <ImageContainer className="d-flex bg-dark align-items-center justify-content-center">
-                            <img src="" alt="image" className="img-fluid rounded" />
-                        </ImageContainer>
-                        <Heading as="h4" color="white" className="mt-3">HellfireGFX</Heading>
+                        <Link to={`/portfolio?source=${queryStrings.ADZOOMA}`} className="text-decoration-none">
+                            <ImageContainer className="d-flex bg-dark align-items-center justify-content-center">
+                                <img src="" alt="image" className="img-fluid rounded" />
+                            </ImageContainer>
+                            <Heading as="h4" color="white" className="mt-3">HellfireGFX</Heading>
+                        </Link>
                     </div>
                 </div>
             </MaxWidthContainer>
