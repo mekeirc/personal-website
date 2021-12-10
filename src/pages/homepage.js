@@ -37,6 +37,14 @@ export const MaxWidthContainer = styled.div(({ theme }) => css`
     }
 `);
 
+const Hero = styled.div`
+    min-height: 80vh;
+
+    @media screen and (min-width: ${props => props.theme.breakPoints.md}){
+        min-height: 88vh;
+    }
+`;
+
 const Layout = () => (
     <React.Fragment>
         <Section
@@ -45,7 +53,7 @@ const Layout = () => (
             justify-items-center flex-column">
             <div className="w-100">
                 <Header />
-                <div className="d-flex justify-content-center flex-column position-relative" style={{ minHeight: '88vh' }}>
+                <Hero className="d-flex justify-content-center flex-column position-relative">
                     <div>
                         <Heading as="h1" color="sunburstOrange">Hi, I'm Keir Covington</Heading>
                         <Heading as="h3" color="white">Graphic Designer + Frontend Developer Hybrid</Heading>
@@ -66,7 +74,7 @@ const Layout = () => (
                             </svg>
                         </a>
                     </div>
-                </div>
+                </Hero>
             </div>
         </Section>
         <MaxWidthContainer>

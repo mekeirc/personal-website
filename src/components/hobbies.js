@@ -16,7 +16,7 @@ import TravellingIcon from '../images/icons/Travelling.svg';
 import CryptoIcon from '../images/icons/Crypto.svg';
 
 const IconColumn = ({ icon, title, children }) => (
-    <div className="col-6 col-lg-3">
+    <div className="col-12 col-md-6 col-lg-3">
         <div className="d-flex pt-64 align-items-center">
             <img src={ icon } alt="icon" className="me-3" />
             <Heading as="h4" color="black" className="mb-0">{ title }</Heading>
