@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { ThemeProvider } from 'styled-components';
-import Layout from './components/homepage';
+import Layout from './pages/homepage';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
-import PortfolioPage from './components/portfoliopage';
+import PortfolioPage from './pages/portfoliopage';
 
 const theme = {
     colors: {

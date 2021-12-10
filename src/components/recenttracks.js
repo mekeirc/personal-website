@@ -3,11 +3,11 @@ import { useState, useEffect, useCallback } from 'react';
 import PropTypes from 'prop-types';
 import styled, { css } from 'styled-components';
 import Paragraph from './paragraph';
-import { Section } from './homepage';
+import { Section } from '../pages/homepage';
 import Heading from './heading';
 import { apiKey, apiUser, apiFormat, extendedApi, apiLimit } from '../constants';
 import fallbackImage from '../images/fallbackimage.png';
-import { MaxWidthContainer } from './homepage';
+import { MaxWidthContainer } from '../pages/homepage';
 
 const MobileView = styled.div(({ isToggled }) => css`
     display: flex;

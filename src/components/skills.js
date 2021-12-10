@@ -1,9 +1,9 @@
 import React from 'react';
 import Heading from './heading';
 import ProgressBar from './progressbar';
-import { Section } from './homepage';
+import { Section } from '../pages/homepage';
 import Badge from './badge';
-import { MaxWidthContainer } from './homepage';
+import { MaxWidthContainer } from '../pages/homepage';
 
 const Skills = () => (
     <div className="container-fluid" id="skills">

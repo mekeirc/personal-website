@@ -1,10 +1,10 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import Heading from './heading';
-import Paragraph from './paragraph';
-import Header from './header';
-import { Section } from './homepage';
-import { MaxWidthContainer } from './homepage';
+import Heading from '../components/heading';
+import Paragraph from '../components/paragraph';
+import Header from '../components/header';
+import { Section } from '../pages/homepage';
+import { MaxWidthContainer } from '../pages/homepage';
 
 const PortfolioPage = () => (
     <React.Fragment>

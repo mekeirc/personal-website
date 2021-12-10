@@ -6,9 +6,9 @@ import styled, { css } from 'styled-components';
 // Components
 import Heading from './heading';
 import Paragraph from './paragraph';
-import { Section } from './homepage';
+import { Section } from '../pages/homepage';
 import Badge from './badge';
-import { MaxWidthContainer } from './homepage';
+import { MaxWidthContainer } from '../pages/homepage';
 
 const Work = ({ role, company, duration }) => (
     <div className="pb-3 row">

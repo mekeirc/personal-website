@@ -1,12 +1,12 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import Heading from './heading';
-import { Section } from './homepage';
+import { Section } from '../pages/homepage';
 import Badge from './badge';
 import { UncontrolledCollapse } from 'reactstrap';
 import { Link } from "react-router-dom";
 import Skills from './skills';
-import { MaxWidthContainer } from './homepage';
+import { MaxWidthContainer } from '../pages/homepage';
 
 const ImageContainer = styled.div(({ theme, bgColor }) => css`
     background: ${theme.colors[bgColor]};

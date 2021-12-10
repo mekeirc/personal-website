@@ -1,16 +1,16 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
-import Heading from './heading';
-import Paragraph from './paragraph';
-import Header from './header';
-import Hobbies from './hobbies';
-import AboutMe from './aboutme';
-import Skills from './skills';
-import RecentTracks from './recenttracks';
-import TopAlbums from './topalbums';
-import Experience from './experience';
-import Portfolio from './portfolio';
-import Footer from './footer';
+import Heading from '../components/heading';
+import Paragraph from '../components/paragraph';
+import Header from '../components/header';
+import Hobbies from '../components/hobbies';
+import AboutMe from '../components/aboutme';
+import Skills from '../components/skills';
+import RecentTracks from '../components/recenttracks';
+import TopAlbums from '../components/topalbums';
+import Experience from '../components/experience';
+import Portfolio from '../components/portfolio';
+import Footer from '../components/footer';
 
 export const Section = styled.section(({ theme, background, bordered, lessPadding }) => css`
     background: ${theme.colors[background]};
@@ -23,20 +23,6 @@ export const Section = styled.section(({ theme, background, bordered, lessPaddin
 
     border-top: ${bordered ? `1px solid ${theme.colors.greyBorder}` : '0'};
     border-bottom: ${bordered ? `1px solid ${theme.colors.greyBorder}` : '0'};
-
-    .pt-32 { padding-top: 32px; }
-    .pb-32 { padding-bottom: 32px; }
-    .pt-64 { padding-top: 64px; }
-    .pb-64 { padding-bottom: 64px; }
-    .pt-128, &.pt-128 { padding-top: 128px; }
-    .pb-128, &.pb-128 { padding-bottom: 128px; }
-
-    .mt-32, &.mt-32 { margin-top: 32px; }
-    .mb-32, &.mb-32 { margin-bottom: 32px; }
-    .mt-64, &.mt-64 { margin-top: 64px; }
-    .mb-64, &.mb-64 { margin-bottom: 64px; }
-    .mt-128, &.mt-128 { margin-top: 128px; }
-    .mb-128, &.mb-128 { margin-bottom: 128px; }
 `);
 
 export const MaxWidthContainer = styled.div(({ theme }) => css`

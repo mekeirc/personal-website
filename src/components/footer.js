@@ -6,7 +6,7 @@ import styled, { css } from 'styled-components';
 // Components
 import Heading from './heading';
 import Paragraph from './paragraph';
-import { Section } from './homepage';
+import { Section } from '../pages/homepage';
 
 // Images
 import GitLogo from '../images/gitlogo.svg';
