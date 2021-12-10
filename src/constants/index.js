@@ -7,4 +7,5 @@ export const apiLimit = 24;
 export const queryStrings = {
     ADZOOMA: 'adzooma',
     RIGHTINDEM: 'rightindem',
+    HELLFIRE_GFX: 'hellfiregfx',
  }

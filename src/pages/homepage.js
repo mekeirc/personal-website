@@ -26,6 +26,7 @@ export const Section = styled.section(({ theme, background, bordered, lessPaddin
 `);
 
 export const MaxWidthContainer = styled.div(({ theme }) => css`
+    width: 100%;
     @media screen and (min-width: ${theme.breakPoints.xxl}){
         max-width: 80%;
         margin: auto;

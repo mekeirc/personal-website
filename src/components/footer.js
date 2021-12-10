@@ -76,7 +76,7 @@ const Footer = () => (
                         target="_blank"
                     >
                         <FooterImg src={ GitLogo } alt="Git Logo" className="mb-3" />
-                        <Paragraph color="black" subtext>View source code!</Paragraph>
+                        <Paragraph color="black" subtext className="mb-0">View source code!</Paragraph>
                     </a>
                 </div>
                 <div className="col-12 col-md-4 col-xxl-2 text-center mb-5 mb-md-0">
@@ -87,7 +87,7 @@ const Footer = () => (
                         target="_blank"
                     >
                         <FooterImg src={ ParcelLogo } alt="Parcel Logo" className="mb-3" />
-                        <Paragraph color="black" subtext>Built without <Code>create-react-app</Code></Paragraph>
+                        <Paragraph color="black" subtext className="mb-0">Built without <Code>create-react-app</Code></Paragraph>
                     </a>
                 </div>
                 <div className="col-12 col-md-3 col-xxl-2 text-center">
@@ -98,7 +98,7 @@ const Footer = () => (
                         target="_blank"
                     >
                         <FooterImg src={ BootstrapLogo } alt="Parcel Logo" className="mb-3" />
-                        <Paragraph color="black" subtext>Built with Bootstrap</Paragraph>
+                        <Paragraph color="black" subtext className="mb-0">Built with Bootstrap</Paragraph>
                     </a>
                 </div>
             </div>

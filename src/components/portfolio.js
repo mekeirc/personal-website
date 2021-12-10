@@ -46,7 +46,7 @@ const Portfolio = () => (
                         <Heading as="h4" color="white" className="mt-3">Stereocandy</Heading>
                     </div>
                     <div className="col">
-                        <Link to={`/portfolio?source=${queryStrings.ADZOOMA}`} className="text-decoration-none">
+                        <Link to={`/portfolio?source=${queryStrings.HELLFIRE_GFX}`} className="text-decoration-none">
                             <ImageContainer className="d-flex bg-dark align-items-center justify-content-center">
                                 <img src="" alt="image" className="img-fluid rounded" />
                             </ImageContainer>

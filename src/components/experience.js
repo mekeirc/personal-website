@@ -34,7 +34,7 @@ const Experience = () => (
                 <Heading as="h2" color="burntOrange">Experience</Heading>
             </MaxWidthContainer>
         </Section>
-        <Section>
+        <Section lessPadding>
             <MaxWidthContainer>
                 <Work
                     role="Frontend Developer"
@@ -59,7 +59,7 @@ const Experience = () => (
                 </div>
             </MaxWidthContainer>
         </Section>
-        <Section background="lightGrey" bordered>
+        <Section background="lightGrey" bordered lessPadding>
             <MaxWidthContainer>
                 <Work
                     role="IT Engineer"
@@ -78,7 +78,7 @@ const Experience = () => (
                 </div>
             </MaxWidthContainer>
         </Section>
-        <Section>
+        <Section lessPadding className="mb-64">
             <MaxWidthContainer>
                 <Work
                     role="Junior Designer &amp; Developer / Junior Graphic Designer"
