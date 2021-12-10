@@ -4,12 +4,13 @@ import { Section } from '../pages/homepage';
 import { Link } from "react-router-dom";
 import { MaxWidthContainer } from '../pages/homepage';
 import { queryStrings } from '../constants';
-import MobileView from './utilities/mobileview';
+import { NoToggleMobileView } from './utilities/mobileview';
 
 // images
 import HellfireSquare from '../images/portfolio-hellfiregfx.jpg';
 import RightindemSquare from '../images/portfolio-rightindem.png';
 import BuyingButlerSquare from '../images/portfolio-buyingbutler.png';
+import AdzoomaSquare from '../images/portfolio-adzooma.png';
 
 const Square = ({ query, title, image }) => (
     <div className="col-11 col-sm-6 col-lg-4">
@@ -27,7 +28,7 @@ const Portfolio = () => (
         <Section background="black" className="row">
             <MaxWidthContainer>
                 <Heading as="h2" color="white" className="text-center">Portfolio &amp; Demos</Heading>
-                <MobileView className="row">
+                <NoToggleMobileView className="row">
                     <Square
                         query={ queryStrings.HELLFIRE_GFX }
                         title="Hellfire GFX"
@@ -38,7 +39,17 @@ const Portfolio = () => (
                         title="Rightindem"
                         image={ RightindemSquare }
                     />
-                </MobileView>
+                    <Square
+                        query={ queryStrings.BUYING_BUTLER }
+                        title="Buying Butler"
+                        image={ BuyingButlerSquare }
+                    />
+                    <Square
+                        query={ queryStrings.ADZOOMA }
+                        title="Adzooma"
+                        image={ AdzoomaSquare }
+                    />
+                </NoToggleMobileView>
             </MaxWidthContainer>
         </Section>
     </div>

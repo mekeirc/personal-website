@@ -8,4 +8,5 @@ export const queryStrings = {
     ADZOOMA: 'adzooma',
     RIGHTINDEM: 'rightindem',
     HELLFIRE_GFX: 'hellfiregfx',
+    BUYING_BUTLER: 'buyingbutler',
  }
