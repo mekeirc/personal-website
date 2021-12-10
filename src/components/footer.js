@@ -68,7 +68,7 @@ const Footer = () => (
         </Section>
         <Section background="white">
             <div className="row justify-content-center">
-                <div className="col-12 col-md-2 col-xxl-2 text-center mb-5 mb-md-0">
+                <div className="col-12 col-sm-6 col-md-3 col-xxl-2 text-center mb-5 mb-md-0">
                     <a
                         href="https://github.com/mekeirc/personal-website/tree/master/src"
                         alt="See project on git"
@@ -76,10 +76,10 @@ const Footer = () => (
                         target="_blank"
                     >
                         <FooterImg src={ GitLogo } alt="Git Logo" className="mb-3" />
-                        <Paragraph color="black" subtext className="mb-0">View source code!</Paragraph>
+                        <Paragraph color="black" subtext className="mb-0 d-none d-md-block">View source code!</Paragraph>
                     </a>
                 </div>
-                <div className="col-12 col-md-4 col-xxl-2 text-center mb-5 mb-md-0">
+                <div className="col-12 col-sm-6 col-md-5 col-xxl-2 text-center mb-5 mb-md-0">
                     <a
                         href="https://parceljs.org/"
                         alt="Built with ParcelJS"
@@ -87,10 +87,10 @@ const Footer = () => (
                         target="_blank"
                     >
                         <FooterImg src={ ParcelLogo } alt="Parcel Logo" className="mb-3" />
-                        <Paragraph color="black" subtext className="mb-0">Built without <Code>create-react-app</Code></Paragraph>
+                        <Paragraph color="black" subtext className="mb-0 d-none d-md-block">Built without <Code>create-react-app</Code></Paragraph>
                     </a>
                 </div>
-                <div className="col-12 col-md-3 col-xxl-2 text-center">
+                <div className="col-12 col-sm-6 col-md-4 col-xxl-2 text-center">
                     <a
                         href="https://getbootstrap.com/"
                         alt="Built with Bootstrap"
@@ -98,7 +98,7 @@ const Footer = () => (
                         target="_blank"
                     >
                         <FooterImg src={ BootstrapLogo } alt="Parcel Logo" className="mb-3" />
-                        <Paragraph color="black" subtext className="mb-0">Built with Bootstrap</Paragraph>
+                        <Paragraph color="black" subtext className="mb-0 d-none d-md-block">Built with Bootstrap</Paragraph>
                     </a>
                 </div>
             </div>
