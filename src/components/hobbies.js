@@ -31,7 +31,7 @@ const Hobbies = () => (
     <React.Fragment>
         <Heading as="h2" color="burntOrange" className="pt-64">Hobbies &amp; Interests</Heading>
         <Paragraph color="black">Gaming, Weightlifting & Fitness, Electronics, Music, Football, Cycling, Travelling, Photography & Cryptocurrency.</Paragraph>
-        <div className="row pb-64">
+        <div className="row pb-64" id="hobbies">
             <IconColumn icon={ GamingIcon } title="Gaming">
                 Paragraph goes here
             </IconColumn>
