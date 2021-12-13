@@ -1,5 +1,5 @@
 import styled, { keyframes } from 'styled-components';
-import LoadingSpinner from '../images/loadingspinner.png';
+import LoadingSpinner from '../../images/loadingspinneronwhite.png';
 
 const Rotate = keyframes`
     0% { transform: rotate(0deg); }
@@ -11,12 +11,10 @@ const Spinner = styled.img`
     animation-duration: 1.2s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    width: 64px;
+    height: 64px;
 `;
 
-const Loading = () => (
-    <div className="position-fixed bg-black w-100 h-100 top-0 left-0 d-flex align-items-center justify-content-center">
-        <Spinner src={ LoadingSpinner } alt="Loading" />
-    </div>
-);
+const Loading = () => <Spinner src={ LoadingSpinner } alt="Loading" />;
 
 export default Loading;

@@ -9,6 +9,7 @@ import { apiKey, apiUser, apiFormat, extendedApi, apiLimit } from '../constants'
 import fallbackImage from '../images/fallbackimage.png';
 import { MaxWidthContainer } from '../pages/homepage';
 import MobileView from './utilities/mobileview';
+import Loading from './utilities/loadingoverlay';
 
 const LinkButton = styled.a(({ theme }) => css`
     color: ${theme.colors.burntOrange};
@@ -56,6 +57,11 @@ const RecentTracks = () => {
                         <Heading as="h3" color="burntOrange">Recent Tracks</Heading>
                         <LinkButton onClick={ showAll } className="d-none d-md-inline">Show {isToggled ? 'Less' : 'More'}</LinkButton>
                     </div>
+                    {recentTracks.length === 0 ? (
+                        <div className="d-flex col-12 justify-content-center align-items-center" style={{ minHeight: '410px' }}>
+                            <Loading />
+                        </div>
+                    ) : (
                     <MobileView className="row" isToggled={ isToggled }>
                         {recentTracks.map((rt, index) => (
                             <div className={`col-8 col-sm-4 col-md-3 col-xl-3 col-xxl-2 ${isToggled && 'mb-md-5'}`} key={ index }>
@@ -71,11 +77,11 @@ const RecentTracks = () => {
                             </div>
                         ))}
                         </MobileView>
+                    )}
                 </MaxWidthContainer>
             </Section>
         </React.Fragment>
-    )
-};
+    )};
 
 RecentTracks.propTypes = {
     recentTracks: PropTypes.arrayOf(PropTypes.object),
