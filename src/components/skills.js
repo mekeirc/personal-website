@@ -12,10 +12,9 @@ const Skills = () => (
             <div className="col-12 col-md-6 p-0">
                 <Section
                     background="black"
-                    className="d-flex align-items-md-end flex-column 
-                    align-items-center align-items-md-start pb-128">
-                        <div className="col-10 col-sm-6 col-md-12 col-xl-8 col-xxl-6">
-                            <Heading as="h2" color="sunburstOrange" className="pt-64 pb-64">Design</Heading>
+                    className="pb-128 d-flex justify-content-start justify-content-md-end">
+                        <div className="d-flex flex-column col-12 col-xl-10 col-xxl-6">
+                            <Heading as="h2" color="sunburstOrange" className="pt-md-5 pb-64 align-self-start align-self-md-end">Design</Heading>
                             <ProgressBar value="95" label="Adobe Photoshop" reversed darker />
                             <ProgressBar value="75" label="Bohemian Sketch" reversed darker />
                             <ProgressBar value="60" label="Wireframing" reversed darker />
@@ -27,9 +26,9 @@ const Skills = () => (
             </div>
             <div className="col-12 col-md-6 p-0">
                 <Section background="white"
-                    className="d-flex flex-column align-items-center align-items-md-start pb-128">
-                        <div className="col-10 col-sm-6 col-md-12 col-xl-8 col-xxl-6">
-                            <Heading as="h2" color="burntOrange" className="pt-64 pb-64">Dev</Heading>
+                    className="pb-128">
+                        <div className="d-flex flex-column col-12 col-xl-10 col-xxl-6">
+                            <Heading as="h2" color="burntOrange" className="pt-md-5 pb-64">Dev</Heading>
                             <ProgressBar value="95" label="HTML" />
                             <ProgressBar value="95" label="CSS / SCSS / SASS" />
                             <ProgressBar value="70" label="ReactJS + ES6 Javascript" />

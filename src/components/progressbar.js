@@ -24,7 +24,7 @@ const Bar = styled.div(({ theme, darker, value }) => css`
 `);
 
 const ProgressBar = ({ label, darker, value, reversed }) => (
-    <div className={`pb-32 d-flex flex-column ${ reversed ? 'align-items-end' : 'align-items-start'}`}>
+    <div className={`pb-32 d-flex flex-column ${ reversed ? 'align-items-md-end' : 'align-items-start'}`}>
         <Paragraph color={ darker ? 'white' : 'barBgdarker'}> { label }</Paragraph>
         <Base darker={ darker } reversed={ reversed } className="w-100 d-flex">
             <Bar darker={ darker } value={ value } />
