@@ -9,7 +9,6 @@ const Base = styled.div(({ theme, darker, reversed }) => css`
     background: ${darker ? theme.colors.barBgdarker : theme.colors.barBgOnLight};
     height: 6px;
     border-radius: ${ BarRadius };
-    min-width: 250px;
     flex-direction: row;
 
     @media screen and (min-width: ${theme.breakPoints.md}) {

@@ -14,25 +14,29 @@ const Skills = () => (
                     background="black"
                     className="d-flex align-items-md-end flex-column 
                     align-items-center align-items-md-start pb-128">
-                        <Heading as="h2" color="sunburstOrange" className="pt-64 pb-64">Design</Heading>
-                        <ProgressBar value="95" label="Adobe Photoshop" reversed darker />
-                        <ProgressBar value="75" label="Bohemian Sketch" reversed darker />
-                        <ProgressBar value="60" label="Wireframing" reversed darker />
-                        <ProgressBar value="60" label="SVG Design + Animation" reversed darker />
-                        <ProgressBar value="50" label="Adobe Premiere + After Effects" reversed darker />
-                        <ProgressBar value="50" label="Adobe Illustrator + InDesign" reversed darker />
+                        <div className="col-10 col-sm-6 col-md-12 col-xl-8 col-xxl-6">
+                            <Heading as="h2" color="sunburstOrange" className="pt-64 pb-64">Design</Heading>
+                            <ProgressBar value="95" label="Adobe Photoshop" reversed darker />
+                            <ProgressBar value="75" label="Bohemian Sketch" reversed darker />
+                            <ProgressBar value="60" label="Wireframing" reversed darker />
+                            <ProgressBar value="60" label="SVG Design + Animation" reversed darker />
+                            <ProgressBar value="50" label="Adobe Premiere + After Effects" reversed darker />
+                            <ProgressBar value="50" label="Adobe Illustrator + InDesign" reversed darker />
+                        </div>
                 </Section>
             </div>
             <div className="col-12 col-md-6 p-0">
                 <Section background="white"
                     className="d-flex flex-column align-items-center align-items-md-start pb-128">
-                        <Heading as="h2" color="burntOrange" className="pt-64 pb-64">Dev</Heading>
-                        <ProgressBar value="95" label="HTML" />
-                        <ProgressBar value="95" label="CSS / SCSS / SASS" />
-                        <ProgressBar value="70" label="ReactJS + ES6 Javascript" />
-                        <ProgressBar value="60" label="RESTful Development" />
-                        <ProgressBar value="60" label="git + npm" />
-                        <ProgressBar value="60" label="React Redux" />
+                        <div className="col-10 col-sm-6 col-md-12 col-xl-8 col-xxl-6">
+                            <Heading as="h2" color="burntOrange" className="pt-64 pb-64">Dev</Heading>
+                            <ProgressBar value="95" label="HTML" />
+                            <ProgressBar value="95" label="CSS / SCSS / SASS" />
+                            <ProgressBar value="70" label="ReactJS + ES6 Javascript" />
+                            <ProgressBar value="60" label="RESTful Development" />
+                            <ProgressBar value="60" label="git + npm" />
+                            <ProgressBar value="60" label="React Redux" />
+                        </div>
                 </Section>
             </div>
         </div>
