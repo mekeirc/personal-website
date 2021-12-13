@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import Heading from '../components/heading';
 import Paragraph from '../components/paragraph';
 import { Section } from '../pages/homepage';
@@ -15,7 +15,11 @@ import backButton from '../images/backbutton.svg';
 import Portfolio from '../components/portfolio';
 
 const PortfolioPage = () => {
-    window.scrollTo(0, 0);
+    window.scrollTo({
+        top: 0, 
+        left: 0,
+        behavior: 'instant',
+    });
     const urlSearchParams = new URLSearchParams(window.location.search);
     const params = Object.fromEntries(urlSearchParams.entries());
     return (
