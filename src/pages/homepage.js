@@ -28,11 +28,16 @@ export const Section = styled.section(({ theme, background, bordered, lessPaddin
 export const MaxWidthContainer = styled.div(({ theme }) => css`
     width: 100%;
     @media screen and (min-width: ${theme.breakPoints.xxl}){
-        max-width: 80%;
+        max-width: 90%;
         margin: auto;
     }
-
-    @media screen and (min-width: ${theme.breakPoints.xxxl}){
+    @media screen and (min-width: ${theme.breakPoints.fhd}){
+        max-width: 80%;
+    }
+    @media screen and (min-width: ${theme.breakPoints.qhd}){
+        max-width: 70%;
+    }
+    @media screen and (min-width: ${theme.breakPoints.uhd}){
         max-width: 60%;
     }
 `);
@@ -53,7 +58,7 @@ const Layout = () => (
             justify-items-center flex-column">
             <div className="w-100">
                 <Header />
-                <Hero className="d-flex justify-content-center flex-column position-relative">
+                <Hero className="d-flex justify-content-center align-items-center flex-column position-relative">
                     <div>
                         <Heading as="h1" color="sunburstOrange">Hi, I'm Keir Covington</Heading>
                         <Heading as="h3" color="white">Graphic Designer + Frontend Developer Hybrid</Heading>

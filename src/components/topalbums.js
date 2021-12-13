@@ -11,16 +11,6 @@ import { MaxWidthContainer } from '../pages/homepage';
 import MobileView from './utilities/mobileview';
 import Loading from './utilities/loadingoverlay';
 
-const Button = styled.button(({ theme }) => css`
-    background: ${theme.colors.burntOrange};
-    border: 0;
-    padding: 10px;
-    color: ${theme.colors.white};
-    font-size: 20px;
-    border-radius: 4px;
-    width: 250px;
-`);
-
 const LinkButton = styled.a(({ theme }) => css`
     color: ${theme.colors.burntOrange};
     font-size: 20px;

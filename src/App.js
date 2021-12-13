@@ -28,6 +28,9 @@ const theme = {
         xl: '1200px',
         xxl: '1400px',
         xxxl: '1600px',
+        fhd: '1920px',
+        qhd: '2560px',
+        uhd: '3840px',
     },
     headingSizes: {
         mobile: {
