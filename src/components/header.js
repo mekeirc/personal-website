@@ -88,7 +88,6 @@ const Header = () => {
                 </a>
                 {/* Desktop Navigation */}
                 <div className="d-none d-lg-block">
-                    <NavItem className="mr-4" href="#" alt="nav item">Home</NavItem>
                     <NavItem href="#about" alt="nav item">About</NavItem>
                     <NavItem href="#skills" alt="nav item">Skills</NavItem>
                     <NavItem href="#experience" alt="nav item">Experience</NavItem>

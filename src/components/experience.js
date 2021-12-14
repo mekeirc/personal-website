@@ -67,9 +67,10 @@ const Experience = () => (
                     duration="Apr 2018 - Apr 2019"
                 />
                 <Paragraph color="black" className="pb-2">
-                    After a significant downsize in the company I looked at other roles where I could provide value. 
+                    After a downsize in the company I looked at other roles where I could provide value. 
                     In this role I managed internal infrastructure, handled equipment maintainence and repair, provided 
-                    hardware &amp; software support for developer machines, 
+                    hardware &amp; software support for developers, set up testing stations for dev/design and managed
+                    various admin subscriptions.
                 </Paragraph>
                 <div className="d-flex align-items-baseline flex-wrap">
                     <Badge small text="Infrastructure" color="black" className="me-2" />
