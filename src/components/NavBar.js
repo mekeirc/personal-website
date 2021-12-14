@@ -10,7 +10,7 @@ const NavBar = ({ params }) => (
             <img src={ backButton } />
             <Heading className="mb-0 ms-3">
                 {params.source === queryStrings.HELLFIRE_GFX && 'Hellfire GFX'}
-                {params.source === queryStrings.RIGHTINDEM && 'Rightidem'}
+                {params.source === queryStrings.RIGHTINDEM && 'Rightindem'}
                 {params.source === queryStrings.ADZOOMA && 'Adzooma'}
             </Heading>
         </Link>

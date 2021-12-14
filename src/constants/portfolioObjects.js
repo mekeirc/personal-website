@@ -16,7 +16,7 @@ import ytPyro from '../images/work/optimised/yt_XzKRaZeDzX-2.png';
 export const HellfireGFXContent = [
     {
         title: 'Revolution Gaming Wallpaper (Red)',
-        description: 'big old cocks',
+        description: 'I used negative space to create a punchy logo for Revolution, a gaming team.',
         image: `${rvl1}`,
         tags: [
             {text: 'Logo Design', color: 'burntOrange'},
@@ -41,6 +41,7 @@ export const HellfireGFXContent = [
     },
     {
         title: 'TDA Gaming - Site',
+        description: 'To help myself learn html and css, 16 year old me developed a gaming-focused website for tracking our roster and lastest videos.',
         image: `${tda2}`,
         tags: [
             {text: 'Logo Design', color: 'burntOrange'},
@@ -49,6 +50,7 @@ export const HellfireGFXContent = [
     },
     {
         title: 'Mechanical O-Ring Guide',
+        description: 'This is try at designing infographics, I love mechanical keyboards and have a few guides including this one!',
         image: `${oringguide}`,
         tags: [
             {text: 'Infographic', color: 'burntOrange'},

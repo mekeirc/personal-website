@@ -6,11 +6,30 @@ import React from 'react';
 import Heading from './heading';
 import Paragraph from './paragraph';
 
+// Images
+import GitLogo from '../images/gitlogo.svg';
+
 const AboutMe = () => (
     <React.Fragment>
         <Heading as="h2" color="burntOrange">About Me</Heading>
-        <Paragraph color="black">Hi there, I’m Keir. I’m a graphic designer with a technical skillset, I love web design and development and have been working with both disciplines from the age of 16. I am completely self taught in web development with 6 years of working experience.</Paragraph>
-        <Paragraph color="black">I started using ReactJS in conjunction with styled components to design and build a component library for the development team to use. After getting familiar with tools such as git, npm, </Paragraph>
+        <Paragraph color="black">Hi there, I’m Keir Covington. I’m a Graphic Designer &amp; Web Developer, and everything in between.</Paragraph>
+        <Paragraph color="black">
+            I mainly use Sketch to wireframe and design projects and React, 
+            ES6 Javascript, SCSS &amp; HTML to build them, along with tools such
+            as create-react-app, parceljs, npm, git and many others.
+        </Paragraph>
+        <Paragraph color="black">
+            If you're here for source code, check out my git repo for this project below:
+        </Paragraph>
+        <a
+            href="https://github.com/mekeirc/personal-website/tree/master/src"
+            alt="See project on git"
+            className="text-decoration-none"
+            target="_blank"
+        >
+            <img src={ GitLogo } alt="github repo" className="mt-3" />
+        </a>
+
     </React.Fragment>
 );
 

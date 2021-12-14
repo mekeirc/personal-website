@@ -16,7 +16,7 @@ import TwitterLogo from '../images/twitterlogo.svg';
 import LinkedInLogo from '../images/linkedinlogo.svg';
 
 
-const Code = styled.code(({ theme }) => css`
+export const Code = styled.code(({ theme }) => css`
     background: ${theme.colors.lightGrey};
     border: 1px solid ${theme.colors.greyBorder};
     padding: 2px;

@@ -13,9 +13,9 @@ import BuyingButlerSquare from '../images/portfolio-buyingbutler.png';
 import AdzoomaSquare from '../images/portfolio-adzooma.png';
 
 const Square = ({ query, title, image }) => (
-    <div className="col-11 col-sm-6 col-lg-4">
+    <div className="col-11 col-sm-6 col-lg-4 col-xl-4 col-xxl-3">
         <Link to={`/portfolio?source=${query}`} className="text-decoration-none">
-            <Heading as="h4" color="white" className="mt-3">{ title }</Heading>
+            <Heading as="h4" color="white" className="mt-3 mb-3">{ title }</Heading>
             <div className="d-flex bg-dark align-items-center justify-content-center">
                 <img src={ image } alt="image" className="img-fluid rounded w-100" />
             </div>
@@ -28,27 +28,31 @@ const Portfolio = () => (
         <Section background="black" className="row">
             <MaxWidthContainer>
                 <Heading as="h2" color="white" className="text-center">Portfolio &amp; Demos</Heading>
-                <NoToggleMobileView className="row">
+                <NoToggleMobileView className="row justify-content-center">
+                    {/*
                     <Square
-                        query={ queryStrings.HELLFIRE_GFX }
-                        title="Hellfire GFX"
-                        image={ HellfireSquare }
+                        query={ queryStrings.ADZOOMA }
+                        title="Adzooma"
+                        image={ AdzoomaSquare }
                     />
+                    */}
                     <Square
                         query={ queryStrings.RIGHTINDEM }
                         title="Rightindem"
                         image={ RightindemSquare }
                     />
                     <Square
+                        query={ queryStrings.HELLFIRE_GFX }
+                        title="Hellfire GFX"
+                        image={ HellfireSquare }
+                    />
+                    {/*
+                    <Square
                         query={ queryStrings.BUYING_BUTLER }
                         title="Buying Butler"
                         image={ BuyingButlerSquare }
                     />
-                    <Square
-                        query={ queryStrings.ADZOOMA }
-                        title="Adzooma"
-                        image={ AdzoomaSquare }
-                    />
+                    */}
                 </NoToggleMobileView>
             </MaxWidthContainer>
         </Section>

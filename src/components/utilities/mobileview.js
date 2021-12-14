@@ -16,6 +16,10 @@ export const NoToggleMobileView = styled.div(({ isToggled }) => css`
     overflow-x: scroll;
     flex-wrap: nowrap;
     -webkit-overflow-scrolling: touch;
+
+    @media screen and (min-width: ${props => props.theme.breakPoints.md}) {
+        flex-wrap: wrap;
+    }
     
     ::-webkit-scrollbar {
         display: none;

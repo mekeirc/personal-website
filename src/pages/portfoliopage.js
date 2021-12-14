@@ -13,13 +13,17 @@ import Button from './../components/Button';
 import NavBar from '../components/NavBar';
 
 const PortfolioPage = () => {
-    window.scrollTo({
-        top: 0, 
-        left: 0,
-        behavior: 'instant',
-    });
+    if (!window.location.href.includes('localhost')) {
+        window.scrollTo({
+            top: 0, 
+            left: 0,
+            behavior: 'instant',
+        });
+    }
+
     const urlSearchParams = new URLSearchParams(window.location.search);
     const params = Object.fromEntries(urlSearchParams.entries());
+
     return (
     <React.Fragment>
         {params.source !== undefined && (
@@ -77,6 +81,17 @@ const PortfolioPage = () => {
                             </div>
                         ))}
                     </div>
+                    <div className="row">
+                        <div className="col-11">
+                            <Button
+                                href="https://mekeirc.github.io/ri_design"
+                                alt="ri_design"
+                                className="mb-5 py-3 py-md-2 px-4"
+                            >
+                                Visit the project site
+                            </Button>
+                        </div>
+                    </div>
                     <div className="row mb-32">
                         <div className="col-11">
                         <Heading color="black" as="h4" className="mb-4">Loading Spinner Demo</Heading>
@@ -93,12 +108,6 @@ const PortfolioPage = () => {
                                 Pure SVG Loading Spinner (CSS)</a> by mekeirc (<a href="https://codepen.io/mekeirc">@mekeirc</a>)
                                 on <a href="https://codepen.io">CodePen</a>.
                             </iframe>
-                        </div>
-                    </div>
-                    <Heading color="black" as="h4">Visit the project site</Heading>
-                    <div className="row">
-                        <div className="col-11">
-                            <Button href="https://mekeirc.github.io/ri_design" alt="ri_design" className="mt-2 p-2">Hi</Button>
                         </div>
                     </div>
                     </React.Fragment>

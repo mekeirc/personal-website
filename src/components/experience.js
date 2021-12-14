@@ -78,7 +78,7 @@ const Experience = () => (
                 </div>
             </MaxWidthContainer>
         </Section>
-        <Section lessPadding className="mb-64">
+        <Section lessPadding className="mb-32">
             <MaxWidthContainer>
                 <Work
                     role="Junior Designer &amp; Developer / Junior Graphic Designer"
@@ -88,7 +88,11 @@ const Experience = () => (
                 <Paragraph color="black" className="pb-2">
                     In November 2014 after an initial placement and internship I joined Nottingham-based tech startup Buying Butler as a
                     Junior Designer &amp; Developer, where I helped design and develop their first product iteration, provided graphic design
-                    for business and sales deck purposes, started using wireframing tools and Bohemian Sketch for web design.
+                    for business purposes, built employee workstations and started using wireframing tools and Bohemian Sketch for web design.
+                </Paragraph>
+                <Paragraph color="black" className="pb-2">
+                    In 2016 Buying Butler decided to merge into a new Company called Rightindem Ltd with another co-founder.
+                    At Rightindem I provided graphic design, web development and built styled components for their app projects.
                 </Paragraph>
                 <div className="d-flex align-items-baseline flex-wrap">
                     <Badge small text="HTML" color="black" className="me-2" />
