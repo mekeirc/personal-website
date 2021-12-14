@@ -28,7 +28,7 @@ const Portfolio = () => (
         <Section background="black" className="row">
             <MaxWidthContainer>
                 <Heading as="h2" color="white" className="text-center">Portfolio &amp; Demos</Heading>
-                <NoToggleMobileView className="row justify-content-center">
+                <NoToggleMobileView className="row justify-content-md-center">
                     {/*
                     <Square
                         query={ queryStrings.ADZOOMA }
