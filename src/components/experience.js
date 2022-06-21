@@ -20,7 +20,7 @@ const Work = ({ role, company, duration }) => (
             <Paragraph subtext color="black" className="mb-0">Company</Paragraph>
             <Heading as="h4" color="black">{ company }</Heading>
         </div>
-        <div className="col-12 col-md-3 pb-2 pb-md-0">
+        <div className="col-12 col-md-6 pb-2 pb-md-0">
             <Paragraph subtext className="mb-0">Duration</Paragraph>
             <Paragraph>{ duration }</Paragraph>
         </div>
@@ -38,8 +38,60 @@ const Experience = () => (
             <MaxWidthContainer>
                 <Work
                     role="Frontend Developer"
+                    company="Eyekandy Ltd"
+                    duration="June 2022 [Freelance Contract]"
+                />
+                <Paragraph color="black" className="pb-2">
+                    In June 2022 I worked on a small project with Eyekandy - an AR company making a microsite for their client: Durex.
+                    Here I was tasked with building out their github project into a microsite, with a product demo gallery to showcase
+                    the release of some new products.
+                </Paragraph>
+                <div className="d-flex align-items-baseline flex-wrap">
+                    <Badge small text="ReactJS" color="black" className="me-2" />
+                    <Badge small text="ES6 Javascript" color="black" className="me-2" />
+                    <Badge small text="HTML" color="black" className="me-2" />
+                    <Badge small text="git" color="black" className="me-2" />
+                    <Badge small text="npm" color="black" className="me-2" />
+                    <Badge small text="Bootstrap" color="black" className="me-2" />
+                    <Badge small text="CSS / SCSS / SASS" color="black" className="me-2" />
+                    <Badge small text="Styled Components" color="black" className="me-2" />
+                </div>
+            </MaxWidthContainer>
+        </Section>
+        <Section lessPadding>
+            <MaxWidthContainer>
+                <Work
+                    role="Frontend Developer"
+                    company="Lumos/Nimble Innovation"
+                    duration="Jan 2022 - May 2022 [Contract]"
+                />
+                <Paragraph color="black" className="pb-2">
+                    In 2022 I started contracting and quickly landed a frontend role with London-based Crypto startup - Lumos.
+                    Here I dealt with project management, planning and build of frontend technologies, devops (AWS) and working with
+                    Junior Backend developers to create a P2P Solana exchange. I also created weekly dev update videos with voiceover, wrote job specs
+                    and helped hire the right people to accelerate MVP to product.
+                </Paragraph>
+                <div className="d-flex align-items-baseline flex-wrap">
+                    <Badge small text="ReactJS" color="black" className="me-2" />
+                    <Badge small text="ES6 Javascript" color="black" className="me-2" />
+                    <Badge small text="HTML" color="black" className="me-2" />
+                    <Badge small text="git" color="black" className="me-2" />
+                    <Badge small text="npm" color="black" className="me-2" />
+                    <Badge small text="nodejs" color="black" className="me-2" />
+                    <Badge small text="Bootstrap" color="black" className="me-2" />
+                    <Badge small text="CSS / SCSS / SASS" color="black" className="me-2" />
+                    <Badge small text="Styled Components" color="black" className="me-2" />
+                    <Badge small text="Wireframing" color="burntOrange" className="me-2" />
+                    <Badge small text="Figma" color="burntOrange" className="me-2" />
+                </div>
+            </MaxWidthContainer>
+        </Section>
+        <Section lessPadding>
+            <MaxWidthContainer>
+                <Work
+                    role="Frontend Developer"
                     company="Clicktech / Adzooma"
-                    duration="May 2019 - Oct 2021"
+                    duration="May 2019 - Oct 2021 [Permanent]"
                 />
                 <Paragraph color="black" className="pb-2">
                     In May 2019 I joined Nottingham-based company Clicktech Solutions (Adzooma) as a mid level developer. Whilst working here I have massively improved my development skills and gained invaluable experience with production web app development.
@@ -52,6 +104,7 @@ const Experience = () => (
                     <Badge small text="Agile" color="black" className="me-2" />
                     <Badge small text="git" color="black" className="me-2" />
                     <Badge small text="npm" color="black" className="me-2" />
+                    <Badge small text="Bootstrap" color="black" className="me-2" />
                     <Badge small text="CSS / SCSS / SASS" color="black" className="me-2" />
                     <Badge small text="Styled Components" color="black" className="me-2" />
                     <Badge small text="Wireframing" color="burntOrange" className="me-2" />
@@ -64,7 +117,27 @@ const Experience = () => (
                 <Work
                     role="IT Engineer"
                     company="Rightindem Ltd"
-                    duration="Apr 2018 - Apr 2019"
+                    duration="Apr 2018 - Apr 2019 [Permanent]"
+                />
+                <Paragraph color="black" className="pb-2">
+                    After a downsize in the company I looked at other roles where I could provide value. 
+                    In this role I managed internal infrastructure, handled equipment maintainence and repair, provided 
+                    hardware &amp; software support for developers, set up testing stations for dev/design and managed
+                    various admin subscriptions.
+                </Paragraph>
+                <div className="d-flex align-items-baseline flex-wrap">
+                    <Badge small text="Infrastructure" color="black" className="me-2" />
+                    <Badge small text="Hardware Repair" color="black" className="me-2" />
+                    <Badge small text="Microsoft Azure" color="black" className="me-2" />
+                </div>
+            </MaxWidthContainer>
+        </Section>
+        <Section background="lightGrey" bordered lessPadding>
+            <MaxWidthContainer>
+                <Work
+                    role="IT Engineer"
+                    company="Rightindem Ltd"
+                    duration="Apr 2018 - Apr 2019 [Permanent]"
                 />
                 <Paragraph color="black" className="pb-2">
                     After a downsize in the company I looked at other roles where I could provide value. 
@@ -84,7 +157,7 @@ const Experience = () => (
                 <Work
                     role="Junior Designer &amp; Developer / Junior Graphic Designer"
                     company="Buying Butler Ltd / Rightindem Ltd"
-                    duration="Nov 2014 - Apr 2018"
+                    duration="Nov 2014 - Apr 2018 [Permanent]"
                 />
                 <Paragraph color="black" className="pb-2">
                     In November 2014 after an initial placement and internship I joined Nottingham-based tech startup Buying Butler as a

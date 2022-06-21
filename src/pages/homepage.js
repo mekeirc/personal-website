@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import Heading from '../components/heading';
 import Paragraph from '../components/paragraph';
 import Header from '../components/header';
@@ -42,13 +42,32 @@ export const MaxWidthContainer = styled.div(({ theme }) => css`
     }
 `);
 
+const Bob = keyframes`
+  0% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(0, 10px);
+  }
+
+  100% {
+    transform: translate(0, 0);
+  }
+`;
+
 const Hero = styled.div`
     min-height: 80vh;
 
     @media screen and (min-width: ${props => props.theme.breakPoints.md}){
         min-height: 88vh;
     }
+
+    svg {
+        animation: ${Bob} 2.5s ease-in-out infinite;
+    }
 `;
+
 
 const Layout = () => (
     <React.Fragment>
