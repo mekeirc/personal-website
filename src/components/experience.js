@@ -58,7 +58,7 @@ const Experience = () => (
                 </div>
             </MaxWidthContainer>
         </Section>
-        <Section lessPadding>
+        <Section lessPadding background="lightGrey" bordered>
             <MaxWidthContainer>
                 <Work
                     role="Frontend Developer"
@@ -109,26 +109,6 @@ const Experience = () => (
                     <Badge small text="Styled Components" color="black" className="me-2" />
                     <Badge small text="Wireframing" color="burntOrange" className="me-2" />
                     <Badge small text="HiFi Design" color="burntOrange" className="me-2" />
-                </div>
-            </MaxWidthContainer>
-        </Section>
-        <Section background="lightGrey" bordered lessPadding>
-            <MaxWidthContainer>
-                <Work
-                    role="IT Engineer"
-                    company="Rightindem Ltd"
-                    duration="Apr 2018 - Apr 2019 [Permanent]"
-                />
-                <Paragraph color="black" className="pb-2">
-                    After a downsize in the company I looked at other roles where I could provide value. 
-                    In this role I managed internal infrastructure, handled equipment maintainence and repair, provided 
-                    hardware &amp; software support for developers, set up testing stations for dev/design and managed
-                    various admin subscriptions.
-                </Paragraph>
-                <div className="d-flex align-items-baseline flex-wrap">
-                    <Badge small text="Infrastructure" color="black" className="me-2" />
-                    <Badge small text="Hardware Repair" color="black" className="me-2" />
-                    <Badge small text="Microsoft Azure" color="black" className="me-2" />
                 </div>
             </MaxWidthContainer>
         </Section>
