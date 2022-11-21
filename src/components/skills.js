@@ -16,7 +16,7 @@ const Skills = () => (
                         <div className="d-flex flex-column col-12 col-xl-10 col-xxl-6">
                             <Heading as="h2" color="sunburstOrange" className="pt-md-5 pb-64 align-self-start align-self-md-end">Design</Heading>
                             <ProgressBar value="95" label="Adobe Photoshop" reversed darker />
-                            <ProgressBar value="75" label="Bohemian Sketch" reversed darker />
+                            <ProgressBar value="75" label="Sketch, Figma" reversed darker />
                             <ProgressBar value="60" label="Wireframing" reversed darker />
                             <ProgressBar value="60" label="SVG Design + Animation" reversed darker />
                             <ProgressBar value="50" label="Adobe Premiere + After Effects" reversed darker />
@@ -32,7 +32,7 @@ const Skills = () => (
                             <ProgressBar value="95" label="HTML" />
                             <ProgressBar value="95" label="CSS / SCSS / SASS" />
                             <ProgressBar value="70" label="ReactJS + ES6 Javascript" />
-                            <ProgressBar value="60" label="RESTful Development" />
+                            <ProgressBar value="60" label="REST API" />
                             <ProgressBar value="60" label="git + npm" />
                             <ProgressBar value="60" label="React Redux" />
                         </div>

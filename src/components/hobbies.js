@@ -15,6 +15,7 @@ import FootballIcon from '../images/icons/Football.svg';
 import CyclingIcon from '../images/icons/Cycling.svg';
 import TravellingIcon from '../images/icons/Travelling.svg';
 import CryptoIcon from '../images/icons/Crypto.svg';
+import { MaxWidthContainer, Section } from '../pages/homepage';
 
 const StyledLink = styled.a(({ theme }) => css`
     color: ${ theme.colors.burntOrange };
@@ -35,9 +36,9 @@ const IconColumn = ({ icon, title, children }) => (
 );
 
 const Hobbies = () => (
-    <React.Fragment>
-        <Heading as="h2" color="burntOrange" className="pt-128">Hobbies &amp; Interests</Heading>
-        <div className="row pb-64" id="hobbies">
+    <Section>
+        <Heading as="h2" color="burntOrange" className="pt-32">Hobbies &amp; Interests</Heading>
+        <div className="row pb-32" id="hobbies">
             <IconColumn icon={ GamingIcon } title="Gaming">
                 I love games such as League of Legends, Halo, Call of Duty,
                 Guitar Hero (now Clone Hero) and many others.
@@ -75,7 +76,7 @@ const Hobbies = () => (
                 including Litecoin, Polygon &amp; Cardano.
             </IconColumn>
         </div>
-    </React.Fragment>
+    </Section>
 );
 
 export default Hobbies;

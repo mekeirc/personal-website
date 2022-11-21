@@ -80,7 +80,7 @@ const Layout = () => (
                 <Hero className="d-flex justify-content-center align-items-center flex-column position-relative">
                     <div>
                         <Heading as="h1" color="sunburstOrange">Hi, I'm Keir Covington</Heading>
-                        <Heading as="h3" color="white">Graphic Designer + Frontend Developer Hybrid</Heading>
+                        <Heading as="h3" color="white"> Design &amp; Development Contractor</Heading>
                         <Paragraph>I help create cohesion between Design, Development &amp; User Experience</Paragraph>
                         <Paragraph subtext>Based in Nottingham, UK</Paragraph>
                     </div>
@@ -101,16 +101,12 @@ const Layout = () => (
                 </Hero>
             </div>
         </Section>
-        <MaxWidthContainer>
-            <Section background="white" id="about">
-                <AboutMe />
-                <Hobbies />
-            </Section>
-        </MaxWidthContainer>
-        <RecentTracks />
-        <TopAlbums />
+        <AboutMe />
         <Skills />
         <Experience />
+        <Hobbies />
+        <RecentTracks />
+        <TopAlbums />
         <Portfolio />
         <Footer />
     </React.Fragment> 
