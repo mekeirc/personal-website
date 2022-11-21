@@ -81,7 +81,7 @@ const TopAlbums = () => {
                     ) : (
                     <MobileView className="row" isToggled={ isToggled }>
                         {topAlbums.map((ta, index) => (
-                            <div className={`col-8 col-sm-5 col-md-3 col-xl-3 col-xxl-2 ${isToggled && 'mb-md-5'}`} key={ index }>
+                            <div className={`col-8 col-sm-4 col-md-3 col-xl-3 col-xxl-2 ${isToggled && 'mb-md-5'}`} key={ index }>
                                 <a href={ta.url} style={{ textDecoration: 'none'}} target="_blank" title={`${ta.name} - ${ta.artist.name}`}>
                                     <div className="d-flex flex-column">
                                         <picture>
