@@ -30,7 +30,7 @@ const StyledLink = styled.a(
 );
 
 const IconColumn = ({ icon, title, children }) => (
-	<div className="col-12 col-sm-6 col-md-6 col-lg-3 px-3 pb-3">
+	<div className="col-12 col-sm-6 col-md-6 col-lg-3 pe-3 pb-3">
 		<div className="d-flex pt-0 pt-md-3 align-items-center">
 			<img src={icon} alt="icon" className="me-3" />
 			<Heading as="h4" color="black" className="mb-0">
