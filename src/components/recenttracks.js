@@ -63,7 +63,7 @@ const RecentTracks = () => {
 
     return (
         <React.Fragment>
-            <Section className="d-flex flex-column mb-64" background="lightGrey" bordered>
+            <Section className="d-flex flex-column" background="lightGrey" bordered>
                 <MaxWidthContainer>
                     <div className="d-flex justify-content-between align-items-baseline mb-4">
                         <div className="d-flex align-items-center">

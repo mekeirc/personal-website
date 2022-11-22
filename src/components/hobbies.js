@@ -46,9 +46,9 @@ const IconColumn = ({ icon, title, children }) => (
 );
 
 const Hobbies = () => (
-	<Section>
+	<Section className="pt-0">
 		<MaxWidthContainer className="d-flex flex-column">
-			<Heading as="h2" color="burntOrange" className="pt-32">
+			<Heading as="h2" color="burntOrange">
 				Hobbies &amp; Interests
 			</Heading>
 			<div className="d-flex flex-wrap">

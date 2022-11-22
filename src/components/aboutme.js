@@ -15,7 +15,7 @@ const AboutMe = () => (
         <MaxWidthContainer>
             <Heading as="h2" color="burntOrange">About Me</Heading>
             <Paragraph color="black">
-                Hi there, I'm Keir Covington. I'm a contractor specialising in UX/UI Design &amp; Frontend Developer, as well as everything in between.
+                Hi there, I'm Keir Covington. I'm a contractor specialising in UX/UI Design &amp; Frontend Development, as well as everything in between.
                 Hire one person on contract and get 3 job roles! I love designing and building lean, scalable websites using react.
             </Paragraph>
             <Paragraph color="black">

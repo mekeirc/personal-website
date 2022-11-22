@@ -102,11 +102,11 @@ const Layout = () => (
             </div>
         </Section>
         <AboutMe />
+        <Hobbies />
         <Skills />
         <Experience />
-        <Hobbies />
-        <RecentTracks />
         <TopAlbums />
+        <RecentTracks />
         <Portfolio />
         <Footer />
     </React.Fragment> 

@@ -52,7 +52,7 @@ const Experience = () => {
 
 	return (
 		<React.Fragment>
-            <Section className="pb-0">
+            <Section className="pb-0" id="experience">
                 <MaxWidthContainer>
                     <Heading as="h2" color="burntOrange">
                         Experience
@@ -107,7 +107,7 @@ const Experience = () => {
 							</div>
 						</MaxWidthContainer>
 					</Section>
-					<Section lessPadding id="experience">
+					<Section lessPadding>
 						<MaxWidthContainer>
 							<Work
 								role="Frontend Developer"
@@ -169,7 +169,7 @@ const Experience = () => {
 							<Work
 								role="Frontend Developer"
 								company="Clicktech / Adzooma"
-								duration="May 2019 - Oct 2021 [Permanent]"
+								duration="May 2019 - Oct 2021 (2½ Years) "
 							/>
 							<Paragraph color="black" className="pb-2">
 								In May 2019 I joined Nottingham-based company Clicktech Solutions (Adzooma) as a mid
@@ -199,7 +199,7 @@ const Experience = () => {
 							<Work
 								role="IT Engineer"
 								company="Rightindem Ltd"
-								duration="Apr 2018 - Apr 2019 [Permanent]"
+								duration="Apr 2018 - Apr 2019 (1 Year)"
 							/>
 							<Paragraph color="black" className="pb-2">
 								After a downsize in the company I looked at other roles where I could provide value. In
@@ -219,7 +219,7 @@ const Experience = () => {
 							<Work
 								role="Junior Designer &amp; Developer / Junior Graphic Designer"
 								company="Buying Butler Ltd / Rightindem Ltd"
-								duration="Nov 2014 - Apr 2018 [Permanent]"
+								duration="Nov 2014 - Apr 2018 (4 Years)"
 							/>
 							<Paragraph color="black" className="pb-2">
 								In November 2014 after an initial placement and internship I joined Nottingham-based
