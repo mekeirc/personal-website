@@ -9,6 +9,193 @@ import { Section } from "../pages/homepage";
 import Badge from "./badge";
 import { MaxWidthContainer } from "../pages/homepage";
 
+const WorkSection = () => (
+	<Section lessPadding background="lightGrey" bordered>
+		{Contracts.map((job) => (
+			<MaxWidthContainer>
+				<Work
+					role={job.role}
+					company={job.company}
+					duration={job.duration}
+				/>
+				<Paragraph color="black" className="pb-2">
+					Supporting UX/UI design for a successful design agency, working with a large client in the tobacco space.
+					Collaborating with existing UX designers to meet tight deadlines.
+				</Paragraph>
+				<div className="d-flex align-items-baseline flex-wrap">
+					{job.tags.map((tag) => (
+						<Badge small text={tag.name} color={tag.color} className="me-2" />
+					))}
+				</div>
+			</MaxWidthContainer>
+		))}
+	</Section>
+);
+
+const Contracts = [
+	{
+		role: "Frontend Developer",
+		company: "Lumos/Nimble Innovation",
+		duration: "5 Months (Jan 2022 - May 2022)",
+		text: "In 2022 I started contracting and quickly landed a frontend role with London-based Crypto startup - Lumos. Here I dealt with project management, planning and build of frontend technologies, devops (AWS) and working with Junior Backend developers to create a P2P Solana exchange. I also created weekly dev update videos with voiceover, wrote job specs and helped hire the right people to accelerate MVP to product.",
+		tags: [
+			{
+				name: "REACT",
+				color: "black",
+			},
+			{
+				name: "ES6 JAVASCRIPT",
+				color: "black",
+			},
+			{
+				name: "HTML",
+				color: "black",
+			},
+			{
+				name: "GIT",
+				color: "black",
+			},
+			{
+				name: "NPM",
+				color: "black",
+			},
+			{
+				name: "NODEJS",
+				color: "black",
+			},
+			{
+				name: "BOOTSTRAP",
+				color: "black",
+			},
+			{
+				name: "CSS / SCSS / SASS",
+				color: "black",
+			},
+			{
+				name: "STYLED COMPONENTS",
+				color: "black",
+			},
+			{
+				name: "WIREFRAMING",
+				color: "burntOrange",
+			},
+			{
+				name: "FIGMA",
+				color: "burntOrange",
+			},
+		],
+	},
+	{
+		role: "Frontend Developer",
+		company: "Eyekandy Ltd",
+		duration: "4 Days",
+		text: "In June 2022 I worked on a small project with Eyekandy - an AR company making a microsite for their client: Durex. Here I was tasked with building out their github project into a microsite, with a product demo gallery to showcase the release of some new products.",
+		tags: [
+			{
+				name: "REACT",
+				color: "black",
+			},
+			{
+				name: "ES6 JAVASCRIPT",
+				color: "black",
+			},
+			{
+				name: "HTML",
+				color: "black",
+			},
+			{
+				name: "GIT",
+				color: "black",
+			},
+			{
+				name: "NPM",
+				color: "black",
+			},
+			{
+				name: "BOOTSTRAP",
+				color: "black",
+			},
+			{
+				name: "CSS / SCSS / SASS",
+				color: "black",
+			},
+			{
+				name: "STYLED COMPONENTS",
+				color: "black",
+			},
+		],
+	},
+	{
+		role: "UX/UI Designer",
+		company: "The One Off",
+		duration: "4 Days",
+		text: "Supporting UX/UI design for a successful design agency, working with a large client in the tobacco space. Collaborating with existing UX designers to meet tight deadlines.",
+		tags: [
+			{
+				name: "UX / UI DESIGN",
+				color: "burntOrange",
+			},
+			{
+				name: "FIGMA",
+				color: "burntOrange",
+			},
+		],
+	},
+	{
+		role: "Frontend Developer",
+		company: "The One Off",
+		duration: "4 Months (July 2022 - November 2022)",
+		text: "Contract Frontend Development for a successful design agency. Working with UX/UI Designers to produce frontend code for a large sporting goods client. Complex state management and working with an external API to return products based on user questions.",
+		tags: [
+			{
+				name: "REACT",
+				color: "black",
+			},
+			{
+				name: "ES6 JAVASCRIPT",
+				color: "black",
+			},
+			{
+				name: "HTML",
+				color: "black",
+			},
+			{
+				name: "GIT",
+				color: "black",
+			},
+			{
+				name: "NPM",
+				color: "black",
+			},
+			{
+				name: "NODEJS",
+				color: "black",
+			},
+			{
+				name: "BOOTSTRAP",
+				color: "black",
+			},
+			{
+				name: "CSS / SCSS / SASS",
+				color: "black",
+			},
+			{
+				name: "STYLED COMPONENTS",
+				color: "black",
+			},
+			{
+				name: "WIREFRAMING",
+				color: "burntOrange",
+			},
+			{
+				name: "FIGMA",
+				color: "burntOrange",
+			},
+		],
+	}
+];
+
+
 const Work = ({ role, company, duration }) => (
 	<div className="pb-3 row">
 		<div className="col-12 col-md-3 pb-2 pb-md-0">
