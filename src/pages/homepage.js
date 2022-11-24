@@ -12,7 +12,7 @@ import Experience from '../components/experience';
 import Portfolio from '../components/portfolio';
 import Footer from '../components/footer';
 
-export const Section = styled.section(({ theme, background, bordered, lessPadding }) => css`
+export const Section = styled.section(({ theme, background, bordered, lessPadding, striped }) => css`
     background: ${theme.colors[background]};
     font-family: 'Cerebri-Sans';
 
@@ -21,8 +21,21 @@ export const Section = styled.section(({ theme, background, bordered, lessPaddin
         padding: ${lessPadding ? '32px 64px' : '64px'};
     }
 
-    border-top: ${bordered ? `1px solid ${theme.colors.greyBorder}` : '0'};
-    border-bottom: ${bordered ? `1px solid ${theme.colors.greyBorder}` : '0'};
+    ${bordered && `
+        border-top: ${`1px solid ${theme.colors.greyBorder}`};
+    `}
+
+    ${striped && `
+        &:nth-child(even) {
+            background: ${theme.colors.white};
+            border-top: ${`1px solid ${theme.colors.greyBorder}`};
+            border-bottom: ${`1px solid ${theme.colors.greyBorder}`};
+        }
+
+        &:nth-child(odd) {
+            background: ${theme.colors.lightGrey};
+        }
+    `}
 `);
 
 export const MaxWidthContainer = styled.div(({ theme }) => css`

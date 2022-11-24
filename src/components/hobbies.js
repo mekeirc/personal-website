@@ -46,7 +46,7 @@ const IconColumn = ({ icon, title, children }) => (
 );
 
 const Hobbies = () => (
-	<Section className="pt-0">
+	<Section background="white" bordered className="pb-0" id="hobbies">
 		<MaxWidthContainer className="d-flex flex-column">
 			<Heading as="h2" color="burntOrange">
 				Hobbies &amp; Interests

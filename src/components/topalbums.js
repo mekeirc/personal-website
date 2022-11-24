@@ -63,7 +63,7 @@ const TopAlbums = () => {
 
     return (
         <React.Fragment>
-            <Section className="d-flex flex-column">
+            <Section className="d-flex flex-column" bordered>
                 <MaxWidthContainer>
                     <div className="d-flex justify-content-between align-items-baseline mb-4">
                         <div className="d-flex align-items-center">

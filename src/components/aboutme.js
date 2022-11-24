@@ -11,7 +11,7 @@ import GitLogo from '../images/gitlogo.svg';
 import { MaxWidthContainer, Section } from '../pages/homepage';
 
 const AboutMe = () => (
-    <Section id="about">
+    <Section id="about" background="white">
         <MaxWidthContainer>
             <Heading as="h2" color="burntOrange">About Me</Heading>
             <Paragraph color="black">

@@ -17,6 +17,7 @@ const theme = {
         barBgdarker: '#2D2D2D',
         almostBlack: '#0D0D0D',
         darkOrange: '#B25500',
+        greyBorder2: 'rgba(234, 234, 234, 0.6)'
     },
     fonts: {
         primary: 'Cerebri Sans, Helvetica, sans-serif'
