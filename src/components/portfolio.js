@@ -1,8 +1,8 @@
 import React from 'react';
 import Heading from './heading';
-import { Section } from '../pages/homepage';
+import { Section } from "../components/homepage";
 import { Link } from "react-router-dom";
-import { MaxWidthContainer } from '../pages/homepage';
+import { MaxWidthContainer } from "../components/homepage";
 import { queryStrings } from '../constants';
 import { NoToggleMobileView } from './utilities/mobileview';
 

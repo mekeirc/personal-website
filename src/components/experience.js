@@ -5,9 +5,9 @@ import styled, { css } from 'styled-components';
 // Components
 import Heading from "./heading";
 import Paragraph from "./paragraph";
-import { Section } from "../pages/homepage";
+import { Section } from "../components/homepage";
 import Badge from "./badge";
-import { MaxWidthContainer } from "../pages/homepage";
+import { MaxWidthContainer } from "../components/homepage";
 import { Contracts, Perms } from "../constants";
 
 const JobInfo = ({ role, company, duration }) => (
@@ -40,7 +40,7 @@ const JobInfo = ({ role, company, duration }) => (
 const WorkSection = ({ type }) => (
 	type === "contracts" ? (
 		Contracts.map((job) => (
-			<Section lessPadding striped className="pb-5">
+			<Section lessPadding striped className="py-5">
 				<MaxWidthContainer>
 					<JobInfo
 						role={job.role}
@@ -60,7 +60,7 @@ const WorkSection = ({ type }) => (
 	))
 	) : (
 		Perms.map((job) => (
-			<Section lessPadding striped className="pb-5">
+			<Section lessPadding striped className="py-5">
 				<MaxWidthContainer>
 					<JobInfo
 						role={job.role}

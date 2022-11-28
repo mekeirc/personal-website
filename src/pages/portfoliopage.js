@@ -1,11 +1,7 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import PropTypes from 'prop-types';
-import styled, { css, keyframes } from 'styled-components';
 import Heading from '../components/heading';
 import Paragraph from '../components/paragraph';
-import { Section } from '../pages/homepage';
-import { MaxWidthContainer } from '../pages/homepage';
+import { Section, MaxWidthContainer } from "../components/homepage";
 import { queryStrings } from '../constants';
 import Badge from '../components/badge';
 import { HellfireGFXContent, RightindemContent } from '../constants/portfolioObjects';

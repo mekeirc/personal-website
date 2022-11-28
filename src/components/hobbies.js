@@ -15,7 +15,7 @@ import FootballIcon from "../images/icons/Football.svg";
 import CyclingIcon from "../images/icons/Cycling.svg";
 import TravellingIcon from "../images/icons/Travelling.svg";
 import CryptoIcon from "../images/icons/Crypto.svg";
-import { MaxWidthContainer, Section } from "../pages/homepage";
+import { MaxWidthContainer, Section } from "../components/homepage";
 
 const StyledLink = styled.a(
 	({ theme }) => css`

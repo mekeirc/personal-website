@@ -8,7 +8,7 @@ import Paragraph from './paragraph';
 
 // Images
 import GitLogo from '../images/gitlogo.svg';
-import { MaxWidthContainer, Section } from '../pages/homepage';
+import { MaxWidthContainer, Section } from '../components/homepage';
 
 const AboutMe = () => (
     <Section id="about" background="white">
