@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { ThemeProvider } from 'styled-components';
 import Layout from './pages/homepage';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
@@ -11,13 +11,13 @@ const theme = {
         burntOrange: '#FF7A00',
         sunburstOrange: '#FFBC00',
         darkGrey: '#7F7F7F',
-        lightGrey: '#FAFAFA',
+        lightGrey: 'rgb(251 251 251)',
         greyBorder: '#EAEAEA',
         barBgOnLight: '#D3D3D3',
         barBgdarker: '#2D2D2D',
         almostBlack: '#0D0D0D',
         darkOrange: '#B25500',
-        greyBorder2: 'rgba(234, 234, 234, 0.6)'
+        greyBorder2: 'rgba(234, 234, 234, 0.7)'
     },
     fonts: {
         primary: 'Cerebri Sans, Helvetica, sans-serif'

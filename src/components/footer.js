@@ -4,7 +4,6 @@ import React from 'react';
 import styled, { css } from 'styled-components';
 
 // Components
-import Heading from './heading';
 import Paragraph from './paragraph';
 import { Section } from "../components/homepage";
 

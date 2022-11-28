@@ -17,14 +17,14 @@ export const Section = styled.section(({ theme, background, bordered, lessPaddin
     }
 
     ${bordered && `
-        border-top: ${`1px solid ${theme.colors.greyBorder}`};
+        border-top: ${`1px solid ${theme.colors.greyBorder2}`};
     `}
 
     ${striped && `
         &:nth-child(even) {
             background: ${theme.colors.white};
-            border-top: ${`1px solid ${theme.colors.greyBorder}`};
-            border-bottom: ${`1px solid ${theme.colors.greyBorder}`};
+            border-top: ${`1px solid ${theme.colors.greyBorder2}`};
+            border-bottom: ${`1px solid ${theme.colors.greyBorder2}`};
         }
 
         &:nth-child(odd) {
