@@ -25,8 +25,9 @@ export const Code = styled.code(({ theme }) => css`
 `);
 
 const FooterImg = styled.img`
-    height: 54px;
-    max-height: 54px;
+    width: 100%;
+    max-width: 153px;
+    max-height: 50px;
 `;
 
 const SocialImg = styled.img`
@@ -43,7 +44,7 @@ const Footer = () => (
     <React.Fragment>
         <Section background="lightGrey" bordered lessPadding>
             <div className="row justify-content-center">
-                <div className="col-4 col-md-2 col-xxl-1 text-center">
+                <div className="col-4 col-md-4 col-xxl-1 text-center">
                     <a
                         href="https://www.linkedin.com/in/keir-covington-30783965/"
                         alt="LinkedIn"
@@ -53,7 +54,7 @@ const Footer = () => (
                         <SocialImg src={ LinkedInLogo } alt="Git Logo" />
                     </a>
                 </div>
-                <div className="col-4 col-md-2 col-xxl-1 text-center">
+                <div className="col-4 col-md-4 col-xxl-1 text-center">
                     <a
                         href="https://twitter.com/mekeirc"
                         alt="Twitter"
@@ -67,7 +68,7 @@ const Footer = () => (
         </Section>
         <Section background="white">
             <div className="row justify-content-center">
-                <div className="col-12 col-sm-6 col-md-3 col-xxl-2 text-center mb-5 mb-md-0">
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 text-center mb-5 mb-md-0">
                     <a
                         href="https://github.com/mekeirc/personal-website/tree/master/src"
                         alt="See project on git"
@@ -78,7 +79,7 @@ const Footer = () => (
                         <Paragraph color="black" subtext className="mb-0 d-none d-md-block">View source code!</Paragraph>
                     </a>
                 </div>
-                <div className="col-12 col-sm-6 col-md-5 col-xxl-2 text-center mb-5 mb-md-0">
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 text-center mb-5 mb-md-0">
                     <a
                         href="https://parceljs.org/"
                         alt="Built with ParcelJS"
@@ -89,7 +90,7 @@ const Footer = () => (
                         <Paragraph color="black" subtext className="mb-0 d-none d-md-block">Built without <Code>create-react-app</Code></Paragraph>
                     </a>
                 </div>
-                <div className="col-12 col-sm-6 col-md-4 col-xxl-2 text-center">
+                <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 text-center">
                     <a
                         href="https://getbootstrap.com/"
                         alt="Built with Bootstrap"
