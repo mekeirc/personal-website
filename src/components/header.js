@@ -1,8 +1,8 @@
 import React, { useState, useCallback } from 'react';
 import styled, { css } from 'styled-components';
 import { useState } from 'react';
-import MenuClosed from '../images/menu-closed.svg';
-import MenuOpen from '../images/menu-open.svg';
+import MenuClosed from '../images/menu-button-close.svg';
+import MenuOpen from '../images/menu-button-open.svg';
 import PersonalLogo from '../images/personal-logo.svg';
 
 const NavItem = styled.a`
@@ -26,16 +26,16 @@ const MobileMenu = styled.div(({ isOpen, theme }) => css`
     top: 0;
     left: 0;
     z-index: 2;
-    padding: 32px;
+    padding: 24px;
 
     @supports not (-webkit-touch-callout: none) {
-        height: calc(100vh - 55px);
+        height: 100vh;
     }
 `);
 
 const MobileLink = styled.a(({ theme }) => css`
     color: ${theme.colors.white};
-    font-size: 36px;
+    font-size: 24px;
     font-weight: bold;
     margin-bottom: 32px;
     font-family: 'Cerebri-Sans-Bold';
@@ -62,7 +62,7 @@ const Header = () => {
                 <a className="d-lg-none align-self-end" onClick={ toggleMobileMenu }>
                     <img src={ MenuOpen } alt="Click to open mobile menu" />
                 </a>
-                <div className="d-flex flex-column justify-content-center h-100">
+                <div className="d-flex flex-column mt-5 justify-content-start h-100">
                     <MobileLink href="#about" alt="link1" onClick={ toggleMobileMenu }>
                         About
                     </MobileLink>
