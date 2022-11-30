@@ -51,7 +51,7 @@ const WorkSection = ({ type }) => (
 						{job.text}
 					</Paragraph>
 					<div className="d-flex align-items-baseline flex-wrap">
-						{job.tags.map((tag) => (
+						{job && job.tags.map((tag) => (
 							<Badge small text={tag.name} color={tag.color} className="me-2" />
 						))}
 					</div>

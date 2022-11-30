@@ -11,6 +11,8 @@ const Base = styled.div(({ theme, color, borderColor, small, textColor }) => css
     font-size: ${ small ? '12px' : '18px' };
     ${small && `text-transform: uppercase`};
     margin-bottom: 8px;
+    display: flex;
+    text-align: center;
 `);
 
 const Badge = ({ text, textColor, color, borderColor, small, className }) => (
