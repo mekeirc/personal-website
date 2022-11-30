@@ -8,6 +8,7 @@ import Experience from '../components/experience';
 import Portfolio from '../components/portfolio';
 import Footer from '../components/footer';
 import { Hero } from '../components/homepage';
+import CaseStudies from '../components/caseStudies';
 
 const Layout = () => (
     <React.Fragment>
@@ -19,6 +20,7 @@ const Layout = () => (
         <TopAlbums />
         <RecentTracks />
         <Portfolio />
+        <CaseStudies />
         <Footer />
     </React.Fragment> 
 );

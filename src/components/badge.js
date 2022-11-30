@@ -6,7 +6,7 @@ const Base = styled.div(({ theme, color, borderColor, small, textColor }) => css
     border-radius: 25px;
     background: ${ theme.colors[color] };
     ${!small && `border: 2px solid ${ theme.colors[borderColor] }`};
-    padding: ${ small ? '0 8px' : '0 16px' };
+    // padding: ${ small ? '0 8px' : '0 16px' };
     color: ${ theme.colors[textColor] };
     font-size: ${ small ? '12px' : '18px' };
     ${small && `text-transform: uppercase`};

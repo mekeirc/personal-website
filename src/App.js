@@ -3,6 +3,7 @@ import { ThemeProvider } from 'styled-components';
 import Layout from './pages/homepage';
 import { BrowserRouter as Router, Link, Route, Routes } from 'react-router-dom';
 import PortfolioPage from './pages/portfoliopage';
+import Lumos from './pages/case-studies/lumos';
 
 const theme = {
     colors: {
@@ -51,6 +52,7 @@ export function App() {
                     <Routes>
                         <Route path="/" element={ <Layout /> } />
                         <Route path="/portfolio" element={ <PortfolioPage /> } />
+                        <Route path="/case-studies/lumos" element={ <Lumos /> } />
                     </Routes>
                 </Router>
             </ThemeProvider>
