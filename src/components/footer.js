@@ -40,6 +40,9 @@ const MadeBy = styled.div(({ theme }) => css`
     color: ${theme.colors.white};
 `);
 
+const date = new Date();
+let year = date.getFullYear();
+
 const Footer = () => (
     <React.Fragment>
         <Section background="lightGrey" bordered lessPadding>
@@ -104,7 +107,9 @@ const Footer = () => (
             </div>
         </Section>
         <MadeBy className="text-center py-1">
-            Made with <span className="ps-1 pe-2">🤍</span> in Nottingham &bull; &copy; Keir Covington 2021
+            <Paragraph color="white" className="mb-0" subtext>
+                Made with <span className="ps-1 pe-2">🤍</span> in Nottingham &bull; &copy; Keir Covington {year}
+            </Paragraph>
         </MadeBy>
     </React.Fragment>
 );

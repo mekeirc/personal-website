@@ -11,7 +11,7 @@ export const Section = styled.section(({ theme, background, bordered, lessPaddin
     background: ${theme.colors[background]};
     font-family: 'Cerebri-Sans';
 
-    padding: 32px;
+    padding: 24px;
     @media screen and (min-width: ${theme.breakPoints.md}) {
         padding: ${lessPadding ? '32px 64px' : '64px'};
     }

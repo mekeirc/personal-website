@@ -52,7 +52,7 @@ const WorkSection = ({ type }) => (
 					</Paragraph>
 					<div className="d-flex align-items-baseline flex-wrap">
 						{job.tags.map((tag) => (
-							<Badge small text={tag.name} color={tag.color} className="me-2 px-3" />
+							<Badge small text={tag.name} color={tag.color} className="me-2" />
 						))}
 					</div>
 				</MaxWidthContainer>
@@ -73,7 +73,7 @@ const WorkSection = ({ type }) => (
 					</Paragraph>
 					<div className="d-flex align-items-baseline flex-wrap">
 						{job.tags.map((tag) => (
-							<Badge small text={tag.name} color={tag.color} className="me-2 px-3" />
+							<Badge small text={tag.name} color={tag.color} className="me-2" />
 						))}
 					</div>
 				</MaxWidthContainer>

@@ -20,7 +20,6 @@ const Layout = () => (
         <TopAlbums />
         <RecentTracks />
         <Portfolio />
-        <CaseStudies />
         <Footer />
     </React.Fragment> 
 );
