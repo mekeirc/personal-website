@@ -68,11 +68,10 @@ const WorkSection = ({ type }) => (
 						duration={job.duration}
 					/>
 					<Paragraph color="black" className="pb-2">
-						Supporting UX/UI design for a successful design agency, working with a large client in the tobacco space.
-						Collaborating with existing UX designers to meet tight deadlines.
+						{job.text}
 					</Paragraph>
 					<div className="d-flex align-items-baseline flex-wrap">
-						{job.tags.map((tag) => (
+						{job && job.tags.map((tag) => (
 							<Badge small text={tag.name} color={tag.color} className="me-2" />
 						))}
 					</div>
