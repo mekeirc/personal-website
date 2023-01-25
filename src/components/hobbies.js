@@ -65,7 +65,7 @@ const Hobbies = () => (
 					intention to buy.
 				</IconColumn>
 				<IconColumn icon={MusicIcon} title="Music">
-					I love music so much, I decided to builds some album art components to demonstrate my music taste.
+					I love music so much, I decided to build some album art components to demonstrate my music taste.
 					The artwork below is pulled from the{" "}
 					<StyledLink href="https://last.fm/api" target="_blank">
 						last.fm

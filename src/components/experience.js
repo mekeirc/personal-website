@@ -10,6 +10,9 @@ import Badge from "./badge";
 import { MaxWidthContainer } from "../components/homepage";
 import { Contracts, Perms } from "../constants";
 
+const reversedContracts = Contracts.map(contract => contract).reverse();
+const reversedPerms = Perms.map(perm => perm).reverse();
+
 const JobInfo = ({ role, company, duration }) => (
 	<div className="pb-3 row">
 		<div className="col-12 col-md-4 pb-2 pb-md-0">
@@ -39,7 +42,7 @@ const JobInfo = ({ role, company, duration }) => (
 
 const WorkSection = ({ type }) => (
 	type === "contracts" ? (
-		Contracts.map((job) => (
+		reversedContracts.map((job) => (
 			<Section lessPadding striped className="py-5">
 				<MaxWidthContainer>
 					<JobInfo
@@ -59,7 +62,7 @@ const WorkSection = ({ type }) => (
 			</Section>
 	))
 	) : (
-		Perms.map((job) => (
+		reversedPerms.map((job) => (
 			<Section lessPadding striped className="py-5">
 				<MaxWidthContainer>
 					<JobInfo
@@ -101,7 +104,7 @@ const Experience = () => {
                     <Heading as="h2" color="burntOrange">
                         Experience
                     </Heading>
-                    <Tab onClick={() => setTab('contract')} className={`${tab === 'contract' ? 'active me-4' : 'me-4'}`}>
+                    <Tab onClick={() => setTab('contract')} className={`${tab === 'contract' ? 'active me-5' : 'me-5'}`}>
                         <Paragraph color="black" className="mb-0">Contract</Paragraph>
                     </Tab>
                     <Tab onClick={() => setTab('permanent')} className={`${tab === 'permanent' ? 'active' : ''}`}>

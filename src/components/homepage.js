@@ -88,7 +88,7 @@ export const Hero = () => (
             <HeroBase className="d-flex justify-content-center align-items-center flex-column position-relative">
                 <div>
                     <Heading as="h1" color="sunburstOrange">Hi, I'm Keir Covington</Heading>
-                    <Heading as="h3" color="white"> Design &amp; Development Contractor</Heading>
+                    <Heading as="h3" color="white">Hybrid Designer / Developer</Heading>
                     <Paragraph>I help create cohesion between Design, Development &amp; User Experience</Paragraph>
                     <Paragraph subtext>Based in Nottingham, UK</Paragraph>
                 </div>

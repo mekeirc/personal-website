@@ -9,6 +9,7 @@ import { apiKey, apiUser, apiFormat, extendedApi, apiLimit } from '../constants'
 import fallbackImage from '../images/fallbackimage.png';
 import MobileView from './utilities/mobileview';
 import Loading from './utilities/loadingoverlay';
+import { LiveData } from './topalbums';
 
 const ApiLogo = () => (
     <svg width="99px" height="25px" viewBox="0 0 99 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" className="ms-3">
@@ -67,8 +68,11 @@ const RecentTracks = () => {
                     <div className="d-flex justify-content-between align-items-baseline mb-4">
                         <div className="d-flex align-items-center">
                             <Heading as="h3" color="burntOrange" className="mb-0">Recent Tracks</Heading>
-                            <a href="https://www.last.fm/user/WiseSan" target="_blank">
-                                <ApiLogo />
+                            <a href="https://www.last.fm/api/show/user.getRecentTracks" target="_blank" className="text-decoration-none">
+                                <div className="d-flex align-items-center ms-2">
+                                    <LiveData />
+                                    <Paragraph subtext color="burntOrange" className="mb-0 ms-2" capHeight>Live Data</Paragraph>
+                                </div>
                             </a>
                         </div>
                         <LinkButton onClick={ showAll } className="d-none d-md-inline">Show {isToggled ? 'Less' : 'More'}</LinkButton>
@@ -87,9 +91,9 @@ const RecentTracks = () => {
                                             <source srcSet={rt.image[3]['#text']} type="image/jpg" />
                                             <img src={ fallbackImage } alt="fall back jpg called" className="w-100 rounded" />
                                         </picture>
-                                        <Paragraph color="black" className="mt-3 mb-2" capHeight>{rt.name}</Paragraph>
-                                        <Paragraph color="burntOrange" className="mb-2" capHeight >{rt.artist.name}</Paragraph>
-                                        <Paragraph className="mb-0 clipped" capHeight>{rt.album['#text']}</Paragraph>
+                                        <Paragraph clipped color="black" className="mt-3 mb-2" capHeight>{rt.name}</Paragraph>
+                                        <Paragraph clipped color="burntOrange" className="mb-2" capHeight >{rt.artist.name}</Paragraph>
+                                        <Paragraph clipped className="mb-0" capHeight>{rt.album['#text']}</Paragraph>
                                     </div>
                                 </a>
                             </div>

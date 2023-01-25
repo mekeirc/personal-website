@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useEffect, useCallback } from 'react';
 import PropTypes from 'prop-types';
-import styled, { css } from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import Paragraph from './paragraph';
 import { Section } from "../components/homepage";
 import Heading from './heading';
@@ -32,6 +32,45 @@ const LinkButton = styled.a(({ theme }) => css`
         color: ${theme.colors.black};
     }
 `);
+
+const Fade = keyframes`
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+`;
+
+const LiveDataBase = styled.svg`
+    .ring1 {
+        animation: ${Fade} 2s linear 0s infinite;
+    }
+    .ring2 {
+        animation: ${Fade} 2s linear 0.5s infinite;
+    }
+    .ring3 {
+        animation: ${Fade} 2s linear 1s infinite;
+    }
+`;
+
+export const LiveData = () => (
+    <LiveDataBase width="37px" height="16px" viewBox="0 0 37 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
+        <g id="HiFi" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g id="Artboard" transform="translate(-3.000000, -3.000000)">
+                <circle id="Oval-Copy-2" fill="#FF7A00" cx="21.5" cy="10.5" r="3.5"></circle>
+                <g id="Group" transform="translate(28.000000, 4.000000)" stroke="#FF7A00" stroke-linecap="round">
+                    <path className="ring3" d="M8,0 C10,1.33333333 11,3.66666667 11,7 C11,10.3333333 10,12.6666667 8,14" id="Path-4"></path>
+                    <path className="ring2" d="M4,3 C5.33333333,3.76190476 6,5.0952381 6,7 C6,8.9047619 5.33333333,10.2380952 4,11" id="Path-4-Copy"></path>
+                    <path className="ring1" d="M0,5 C0.666666667,5.38095238 1,6.04761905 1,7 C1,7.95238095 0.666666667,8.61904762 0,9" id="Path-4-Copy-2"></path>
+                </g>
+                <g id="Group-Copy" transform="translate(9.500000, 11.000000) scale(-1, 1) translate(-9.500000, -11.000000) translate(4.000000, 4.000000)" stroke="#FF7A00" stroke-linecap="round">
+                    <path className="ring3" d="M8,0 C10,1.33333333 11,3.66666667 11,7 C11,10.3333333 10,12.6666667 8,14" id="Path-4"></path>
+                    <path className="ring2" d="M4,3 C5.33333333,3.76190476 6,5.0952381 6,7 C6,8.9047619 5.33333333,10.2380952 4,11" id="Path-4-Copy"></path>
+                    <path className="ring1" d="M0,5 C0.666666667,5.38095238 1,6.04761905 1,7 C1,7.95238095 0.666666667,8.61904762 0,9" id="Path-4-Copy-2"></path>
+                </g>
+            </g>
+        </g>
+    </LiveDataBase>
+);
+
 
 const TopAlbums = () => {
     const [topAlbums, setTopAlbums] = useState([]);
@@ -68,8 +107,11 @@ const TopAlbums = () => {
                     <div className="d-flex justify-content-between align-items-baseline mb-4">
                         <div className="d-flex align-items-center">
                             <Heading as="h3" color="burntOrange" className="mb-0">Top Albums</Heading>
-                            <a href="https://www.last.fm/user/WiseSan" target="_blank">
-                                <ApiLogo />
+                            <a href="https://www.last.fm/api/show/user.getTopAlbums" target="_blank" className="text-decoration-none">
+                                <div className="d-flex align-items-center ms-2">
+                                    <LiveData />
+                                    <Paragraph subtext color="burntOrange" className="mb-0 ms-2" capHeight>Live Data</Paragraph>
+                                </div>
                             </a>
                         </div>
                         <LinkButton onClick={ showAll } className="d-none d-md-inline">Show {isToggled ? 'Less' : 'More'}</LinkButton>
@@ -88,8 +130,8 @@ const TopAlbums = () => {
                                             <source srcSet={ta.image[3]['#text']} type="image/jpg" />
                                             <img src={ fallbackImage } alt="fall back jpg called" className="w-100 rounded" />
                                         </picture>
-                                        <Paragraph color="black" className="mt-3 mb-2" capHeight>{ta.name}</Paragraph>
-                                        <Paragraph color="burntOrange" className="mb-2 clipped" capHeight>{ta.artist.name}</Paragraph>
+                                        <Paragraph clipped color="black" className="mt-3 mb-2" capHeight>{ta.name}</Paragraph>
+                                        <Paragraph clipped color="burntOrange" className="mb-2" capHeight>{ta.artist.name}</Paragraph>
                                     </div>
                                 </a>
                             </div>
