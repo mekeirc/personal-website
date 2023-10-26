@@ -26,8 +26,8 @@ const AboutMe = () => (
         <MaxWidthContainer>
             <Heading as="h2" color="burntOrange">About Me</Heading>
             <Paragraph color="black">
-                Hi there, I'm Keir Covington. I'm a contractor specialising in UX/UI Design &amp; Frontend Development, as well as everything in between.
-                Hire one person on contract and get 3 job roles! I love designing and building lean, scalable websites using react.
+                Hi there, I'm Keir Covington. I love designing and developing software! I specialise in UX/UI Design &amp; Frontend Development, as well as everything in between.
+                Hire one person and get 3 job roles! I love designing and building lean, scalable components using apis and complex state management!
             </Paragraph>
             <Paragraph color="black">
                 Some useful links:
@@ -40,12 +40,12 @@ const AboutMe = () => (
                     target="_blank"
                 >
                     <div className="d-flex align-items-center">
-                        <img src={ GitLogo } alt="github repo" />
+                        <img src={ GitLogo } alt="github repo" style={{ height: '30px' }} />
                         <Paragraph color="black" className="ms-2 mb-0">Github Profile</Paragraph>
                     </div>
                 </a>
                 <a
-                    href="https://me.keirc.co.uk/cv/CV_2023-01-24.pdf"
+                    href="https://me.keirc.co.uk/cv/CV_2023-03-06.pdf"
                     alt="Check out my GitHub profile"
                     className="text-decoration-none"
                     target="_blank"
