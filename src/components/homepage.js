@@ -6,6 +6,7 @@ import styled, { css, keyframes } from "styled-components";
 import Heading from "./heading";
 import Paragraph from "./paragraph";
 import Header from "./header";
+import Portrait from "../images/portrait.png";
 
 export const Section = styled.section(({ theme, background, bordered, lessPadding, striped }) => css`
     background: ${theme.colors[background]};
@@ -86,7 +87,8 @@ export const Hero = () => (
         <div className="w-100">
             <Header />
             <HeroBase className="d-flex justify-content-center align-items-center flex-column position-relative">
-                <div>
+                <div className="text-center">
+                    <img src={Portrait} alt="Portrait" className="mb-4"/>
                     <Heading as="h1" color="sunburstOrange">Hi, I'm Keir Covington</Heading>
                     <Heading as="h3" color="white">Hybrid Designer / Developer</Heading>
                     <Paragraph>I help create cohesion between Design, Development &amp; User Experience</Paragraph>
