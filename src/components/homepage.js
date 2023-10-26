@@ -88,7 +88,9 @@ export const Hero = () => (
             <Header />
             <HeroBase className="d-flex justify-content-center align-items-center flex-column position-relative">
                 <div className="text-center">
-                    <img src={Portrait} alt="Portrait" className="mb-4"/>
+                    <a href="https://www.linkedin.com/in/keir-covington-30783965/" target="_blank" alt="LinkedIn">
+                        <img src={Portrait} alt="Portrait" className="mb-4"/>
+                    </a>
                     <Heading as="h1" color="sunburstOrange">Hi, I'm Keir Covington</Heading>
                     <Heading as="h3" color="white">Hybrid Designer / Developer</Heading>
                     <Paragraph>I help create cohesion between Design, Development &amp; User Experience</Paragraph>

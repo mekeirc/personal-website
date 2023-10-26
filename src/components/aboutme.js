@@ -45,7 +45,7 @@ const AboutMe = () => (
                     </div>
                 </a>
                 <a
-                    href="https://me.keirc.co.uk/cv/CV_2023-03-06.pdf"
+                    href="https://me.keirc.co.uk/cv/CV_2023-10-12.pdf"
                     alt="Check out my GitHub profile"
                     className="text-decoration-none"
                     target="_blank"
