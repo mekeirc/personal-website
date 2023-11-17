@@ -4,11 +4,10 @@ import AboutMe from '../components/aboutme';
 import Skills from '../components/skills';
 import RecentTracks from '../components/recenttracks';
 import TopAlbums from '../components/topalbums';
-import Experience from '../components/experience';
+import Experience, { FullWidthBase } from '../components/experience';
 import Portfolio from '../components/portfolio';
 import Footer from '../components/footer';
 import { Hero } from '../components/homepage';
-import CaseStudies from '../components/caseStudies';
 
 const Layout = () => (
     <React.Fragment>
@@ -16,7 +15,9 @@ const Layout = () => (
         <AboutMe />
         <Hobbies />
         <Skills />
-        <Experience />
+        <FullWidthBase background="greyDarker">
+            <Experience />
+        </FullWidthBase>
         <TopAlbums />
         <RecentTracks />
         <Portfolio />
