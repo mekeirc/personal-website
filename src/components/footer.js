@@ -40,6 +40,15 @@ const MadeBy = styled.div(({ theme }) => css`
     color: ${theme.colors.white};
 `);
 
+const WhiteLink = styled.a(({ theme }) => css`
+    color: ${theme.colors.white};
+    text-decoration: none;
+
+    &:hover {
+        color: ${theme.colors.white};
+    }
+`);
+
 const date = new Date();
 let year = date.getFullYear();
 
@@ -108,7 +117,7 @@ const Footer = () => (
         </Section>
         <MadeBy className="text-center py-1">
             <Paragraph color="white" className="mb-0" subtext>
-                Made with <span className="ps-1 pe-2">🤍</span> in Nottingham &bull; &copy; Keir Covington {year}
+                Made with <span className="ps-1 pe-2">🤍</span> in Nottingham &bull; &copy; Keir Covington / <WhiteLink href="https://find-and-update.company-information.service.gov.uk/company/15342668" target="_blank">KEIR Consultancy Ltd</WhiteLink> {year}
             </Paragraph>
         </MadeBy>
     </React.Fragment>

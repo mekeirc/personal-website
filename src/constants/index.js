@@ -13,6 +13,48 @@ export const queryStrings = {
 
 export const JobList = [
 	{
+		role: "Frontend Developer",
+		company: "Xterna",
+		duration: "6 Weeks",
+		location: "Remote",
+		type: "Contract",
+		description: "Designing and building custom frontend pages for an existing Next.js (Typescript/React) project. Developing reusable components using react and styling with Tailwind. API design and mocking with a backend developer. Business analysis and direct communication with stakeholders.",
+		tags: [
+			{
+				name: "Next.js",
+				color: "black",
+			},
+			{
+				name: "Typescript",
+				color: "black",
+			},
+			{
+				name: "HTML",
+				color: "black",
+			},
+			{
+				name: "CSS / SCSS / SASS",
+				color: "black",
+			},
+			{
+				name: "GIT",
+				color: "black",
+			},
+			{
+				name: "FIGMA",
+				color: "burntOrange",
+			},
+			{
+				name: "UI / UX Design",
+				color: "burntOrange",
+			},
+			{
+				name: "Tailwind",
+				color: "burntOrange",
+			},
+		],
+	},
+	{
 		role: "UI/UX Software Developer",
 		company: "Vivantio",
 		duration: "5 Months",

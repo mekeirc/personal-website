@@ -52,6 +52,8 @@ const Skills = () => (
                             <Badge text="Responsive Design" className="me-2" />
                             <Badge text="Prototyping" className="me-2" />
                             <Badge text="SVG Illustration" className="me-2" />
+                            <Badge text="Tailwind CSS" className="me-2" />
+                            <Badge text="Sketch / Figma" className="me-2" />
                         </div>
                         <div className="col-12 col-md-6 d-inline-flex justify-content-center justify-content-md-start ps-2 flex-wrap align-items-start">
                             <Badge text="ReactJS" borderColor="white" className="ms-2" />

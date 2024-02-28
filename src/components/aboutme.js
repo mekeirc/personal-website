@@ -27,7 +27,7 @@ const AboutMe = () => (
             <Heading as="h2" color="burntOrange">About Me</Heading>
             <Paragraph color="black">
                 Hi there, I'm Keir Covington. I love designing and developing software! I specialise in UX/UI Design &amp; Frontend Development, as well as everything in between.
-                Hire one person and get 3 job roles! I love designing and building lean, scalable components using apis and complex state management!
+                Hire one person and get 3 job roles! I love designing and building lean, reusable components using rest apis and complex state management!
             </Paragraph>
             <Paragraph color="black">
                 Some useful links:
@@ -45,7 +45,7 @@ const AboutMe = () => (
                     </div>
                 </a>
                 <a
-                    href="https://me.keirc.co.uk/cv/CV_2023-10-12.pdf"
+                    href="https://me.keirc.co.uk/cv/CV-2024-02-28.pdf"
                     alt="Check out my GitHub profile"
                     className="text-decoration-none"
                     target="_blank"
