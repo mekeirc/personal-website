@@ -24,6 +24,13 @@ export const FullWidthBase = styled.div(
 	`
 );
 
+const BoldTitle = styled(Paragraph)`
+	font-family: 'Cerebri-Sans-Bold';
+	font-weight: normal;
+`;
+
+
+
 const ExperienceBase = ({ children }) => <div className="d-flex flex-row flex-wrap my-5">{children}</div>;
 
 const RoleCard = ({ role, company, duration, location, type, description, tags }) => (
@@ -32,9 +39,9 @@ const RoleCard = ({ role, company, duration, location, type, description, tags }
 			<div class="wrapper">
 				<div className="row">
 					<div className="col-12">
-						<Paragraph color="black" className="mb-0">
+						<BoldTitle color="black" className="mb-0">
 							{role}
-						</Paragraph>
+						</BoldTitle>
 					</div>
 					<div className="col-12">
 						<Paragraph color="burntOrange">{company}</Paragraph>

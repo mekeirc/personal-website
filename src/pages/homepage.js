@@ -8,16 +8,18 @@ import Experience, { FullWidthBase } from '../components/experience';
 import Portfolio from '../components/portfolio';
 import Footer from '../components/footer';
 import { Hero } from '../components/homepage';
+import Contact from '../components/contact';
 
 const Layout = () => (
     <React.Fragment>
         <Hero />
         <AboutMe />
-        <Hobbies />
-        <Skills />
         <FullWidthBase background="greyDarker">
             <Experience />
         </FullWidthBase>
+        <Skills />
+        <Contact />
+        <Hobbies />
         <TopAlbums />
         <RecentTracks />
         <Portfolio />

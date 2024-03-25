@@ -5,7 +5,7 @@ import { Section, MaxWidthContainer } from "../components/homepage";
 import Badge from './badge';
 
 const Skills = () => (
-    <div className="container-fluid" id="skills">
+    <div className="container-fluid pt-4" id="skills">
         <Heading as="h2" color="black" className="text-center pt-4">Skills &amp; Tools</Heading>
         <div className="row">
             <div className="col-12 col-md-6 p-0">

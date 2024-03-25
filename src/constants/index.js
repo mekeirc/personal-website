@@ -87,6 +87,10 @@ export const JobList = [
 				color: "black",
 			},
 			{
+				name: "UI/UX Design",
+				color: "burntOrange",
+			},
+			{
 				name: "FIGMA",
 				color: "burntOrange",
 			},
@@ -361,11 +365,19 @@ export const JobList = [
 				color: "black",
 			},
 			{
+				name: "REACT",
+				color: "black",
+			},
+			{
 				name: "WIREFRAMING",
 				color: "burntOrange",
 			},
 			{
 				name: "HIFI DESIGN",
+				color: "burntOrange",
+			},
+			{
+				name: "Graphic Design",
 				color: "burntOrange",
 			},
 		],
