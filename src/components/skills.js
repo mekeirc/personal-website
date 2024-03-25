@@ -1,11 +1,16 @@
 import React from 'react';
+import styled from 'styled-components';
 import Heading from './heading';
 import ProgressBar from './progressbar';
 import { Section, MaxWidthContainer } from "../components/homepage";
 import Badge from './badge';
 
+const BorderDiv = styled.div`
+    border-top: 1px solid ${props => props.theme.colors.greyBorder2};
+`;
+
 const Skills = () => (
-    <div className="container-fluid pt-4" id="skills">
+    <BorderDiv className="container-fluid pt-4" id="skills">
         <Heading as="h2" color="black" className="text-center pt-4">Skills &amp; Tools</Heading>
         <div className="row">
             <div className="col-12 col-md-6 p-0">
@@ -75,7 +80,7 @@ const Skills = () => (
                 </div>
             </MaxWidthContainer>
         </Section>
-    </div>
+    </BorderDiv>
 );
 
 export default Skills;

@@ -20,8 +20,13 @@ const AboutMe = () => (
             <MaxWidthContainer>
                 <Heading as="h2" color="burntOrange">About Me</Heading>
                 <Paragraph color="black">
-                    Hi there, I'm Keir Covington. I love designing and developing software! I specialise in UX/UI Design &amp; Frontend Development, as well as everything in between.
-                    Hire one person and get 3 job roles! I love designing and building lean, reusable components using rest apis and complex state management!
+                    Hi there, I'm Keir Covington. I'm a full stack designer - someone who designs then builds solutions from wireframe to repo.
+                    Originally from a graphic design background, I've been designing and building websites since 2008 and learned the hard way!
+                    I have around a decade of professional design and development experience and can provide multi-role value to clients.
+                </Paragraph>
+                <Paragraph color="black">
+                    My skills include: Print Design, UI/UX Design, Video Editing &amp; Production, SVG Animation and Web Development (HTML / CSS / Javascript), along with project analysis and management.
+                    I'm highly analytical and have a keen attention to detail that many developers lack - hire 1 person and get 3+ job roles for the price of one!
                 </Paragraph>
             </MaxWidthContainer>
         </Section>

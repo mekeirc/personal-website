@@ -92,7 +92,7 @@ export const Hero = () => (
                         <img src={Portrait} alt="Portrait" className="mb-4"/>
                     </a>
                     <Heading as="h1" color="sunburstOrange">Hi, I'm Keir Covington</Heading>
-                    <Heading as="h3" color="white">Freelance Design &amp; Development Contractor</Heading>
+                    <Heading as="h3" color="white">Design &amp; Development Freelancer</Heading>
                     <Paragraph>I help create cohesion between Design, Development &amp; User Experience</Paragraph>
                     <Paragraph subtext>Based in Nottingham, UK</Paragraph>
                 </div>

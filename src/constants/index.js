@@ -369,6 +369,10 @@ export const JobList = [
 				color: "black",
 			},
 			{
+				name: "GIT",
+				color: "black",
+			},
+			{
 				name: "WIREFRAMING",
 				color: "burntOrange",
 			},
