@@ -7,6 +7,17 @@ export const apiLimit = 24;
 // Showcase Imports
 import TDALogo from '../images/work/optimised/TDA-Logo-(FINAL).jpg';
 import TDASite from '../images/work/optimised/tdasite1.png';
+import NCASE from '../images/work/optimised/ncase.png';
+import TeamRevolution1 from '../images/work/optimised/Team_Revolution_Wall1.jpg';
+import TeamRevolution2 from '../images/work/optimised/Team_Revolution_Wall2.jpg';
+import ORingInformation from '../images/work/optimised/oring1.png';
+import ORingInformation2 from '../images/work/optimised/O-Ring-Guide-2.png';
+import Stereocandy1 from '../images/work/optimised/stereocandy_logo.png';
+import Stereocandy2 from '../images/work/optimised/stereocandy_letmeknow_social.jpg';
+import Stereocandy3 from '../images/work/optimised/stereocandy_letmeknow.jpg';
+import Stereocandy4 from '../images/work/optimised/stereocandy_poster_a5_blue.jpg';
+import Stereocandy5 from '../images/work/optimised/stereocandy_poster_a5_red.jpg';
+import Stereocandy6 from '../images/work/optimised/stereocandy_webposter1.jpg';
 import YouTube1 from '../images/work/optimised/yt_hellfiregfx.png';
 import YouTube2 from '../images/work/optimised/yt_Fuad_Oxideon.jpg';
 import YouTube3 from '../images/work/optimised/yt_nZoGaming.png';
@@ -14,6 +25,39 @@ import YouTube4 from '../images/work/optimised/yt_XzKRaZeDzX-2.png';
 import YouTube5 from '../images/work/optimised/yt_genocide.jpg';
 import YouTube6 from '../images/work/optimised/yt_Mrmucho.png';
 import YouTube7 from '../images/work/optimised/yt_Vapourlife.png';
+import RockSoc1 from '../images/work/optimised/cardfront.jpg';
+import RockSoc2 from '../images/work/optimised/cardback.jpg';
+import RockSoc3 from '../images/work/optimised/rocksoc_allday_poster_a5.jpg';
+import WrathPoster from '../images/work/optimised/Wrath.jpg';
+import RIDesign1 from '../images/work/optimised/project-rightindem-designteam.png';
+import RIDesign2 from '../images/work/optimised/ridesign_tabletmobile.png';
+import RIDesign3 from '../images/work/optimised/ridesign_wireframe2.png';
+import RIDesign4 from '../images/work/optimised/ridesign_hifi1.png';
+import RIDesign5 from '../images/work/optimised/ridesign_final.png';
+import RISentinal1 from '../images/work/optimised/project-rightindem-sentinel.png';
+import RISentinal2 from '../images/work/optimised/opdash1.png';
+import RISentinal3 from '../images/work/optimised/opdash2.png';
+import Lumos1 from '../images/work/optimised/lumosproject.png';
+import Lumos2 from '../images/work/optimised/lumos-screenshot1.png';
+import Lumos3 from '../images/work/optimised/lumos-screenshot2.png';
+import Lumos4 from '../images/work/optimised/lumos-screenshot3.png';
+import Lumos5 from '../images/work/optimised/lumos-screenshot4.png';
+import Dayze1 from '../images/work/optimised/dayze1.png';
+import Dayze2 from '../images/work/optimised/dayze2.png';
+import Dayze3 from '../images/work/optimised/dayze3.png';
+import LifeOfMale1 from '../images/work/optimised/lifeofmale1.png';
+import LifeOfMale2 from '../images/work/optimised/lifeofmale2.jpeg';
+import LifeOfMale3 from '../images/work/optimised/lifeofmale3.jpeg';
+import LifeOfMale4 from '../images/work/optimised/lifeofmale4.jpeg';
+import LifeOfMale5 from '../images/work/optimised/lifeofmale5.jpg';
+import ChristianAid1 from '../images/work/optimised/christianaid1.png';
+import ChristianAid2 from '../images/work/optimised/christianaid2.png';
+import ChristianAid3 from '../images/work/optimised/christianaid3.png';
+import AdzoomaCover from '../images/work/optimised/adzoomacover.png';
+import Adzooma1 from '../images/work/optimised/adzooma1.png';
+import Adzooma2 from '../images/work/optimised/adzooma2.png';
+import Adzooma3 from '../images/work/optimised/adzooma3.png';
+import Adzooma4 from '../images/work/optimised/adzooma4.png';
 
 export const queryStrings = {
     ADZOOMA: 'adzooma',
@@ -23,6 +67,431 @@ export const queryStrings = {
  }
 
 export const ShowcaseItems = [
+	{
+		title: "Christian Aid",
+		cover: ChristianAid1,
+		content: [
+			{
+				src: ChristianAid2,
+				alt: " "
+			},
+			{
+				src: ChristianAid3,
+				alt: " "
+			},
+		],
+		tags: [
+			{
+				name: "Figma",
+				color: "burntOrange",
+			},
+			{
+				name: "Web Design",
+				color: "burntOrange",
+			},
+		],
+	},
+	{
+		title: "Dayze",
+		cover: Dayze1,
+		content: [
+			{
+				src: Dayze2,
+				alt: " "
+			},
+			{
+				src: Dayze3,
+				alt: " "
+			},
+		],
+		tags: [
+			{
+				name: "Figma",
+				color: "burntOrange",
+			},
+			{
+				name: "MobileApp Design",
+				color: "burntOrange",
+			},
+		],
+	},
+	{
+		title: "The Life of Malé",
+		cover: LifeOfMale1,
+		content: [
+			{
+				src: LifeOfMale5,
+				alt: " "
+			},
+			{
+				src: LifeOfMale2,
+				alt: " "
+			},
+			{
+				src: LifeOfMale3,
+				alt: " "
+			},
+			{
+				src: LifeOfMale4,
+				alt: " "
+			},
+
+		],
+		tags: [
+			{
+				name: "Print Design",
+				color: "burntOrange",
+			},
+			{
+				name: "Book Cover",
+				color: "burntOrange",
+			},
+		],
+	},
+	{
+		title: "Lumos Exchange",
+		cover: Lumos1,
+		content: [
+			{
+				src: Lumos2,
+				alt: " "
+			},
+			{
+				src: Lumos3,
+				alt: " "
+			},
+			{
+				src: Lumos4,
+				alt: " "
+			},
+			{
+				src: Lumos5,
+				alt: " "
+			},
+		],
+		tags: [
+			{
+				name: "Figma",
+				color: "burntOrange",
+			},
+			{
+				name: "React",
+				color: "black",
+			},
+			{
+				name: "HTML",
+				color: "black",
+			},
+			{
+				name: "CSS",
+				color: "black",
+			},
+		],
+	},
+	{
+		title: "Adzooma",
+		cover: AdzoomaCover,
+		content: [
+			{
+				src: Adzooma1,
+				alt: " "
+			},
+			{
+				src: Adzooma2,
+				alt: " "
+			},
+			{
+				src: Adzooma3,
+				alt: " "
+			},
+			{
+				src: Adzooma4,
+				alt: " "
+			},
+		],
+		tags: [
+			{
+				name: "UX / UI Design",
+				color: "burntOrange",
+			},
+			{
+				name: "React",
+				color: "black",
+			},
+			{
+				name: "SCSS / SASS",
+				color: "black",
+			},
+			{
+				name: "React Redux",
+				color: "black",
+			},
+			{
+				name: "ES6 Javascript",
+				color: "black",
+			},
+		],
+	},
+	{
+		title: "Rightindem Sentinel",
+		cover: RISentinal1,
+		content: [
+			{
+				src: RISentinal2,
+				alt: " "
+			},
+			{
+				src: RISentinal3,
+				alt: " "
+			},
+		],
+		tags: [
+			{
+				name: "Digital Design",
+				color: "burntOrange",
+			},
+			{
+				name: "Branding",
+				color: "burntOrange",
+			},
+			{
+				name: "React",
+				color: "black",
+			},
+			{
+				name: "CSS",
+				color: "black",
+			},
+		],
+	},
+	{
+		title: "Rightindem Design",
+		cover: RIDesign1,
+		content: [
+			{
+				src: RIDesign2,
+				alt: " "
+			},
+			{
+				src: RIDesign3,
+				alt: " "
+			},
+			{
+				src: RIDesign4,
+				alt: " "
+			},
+			{
+				src: RIDesign5,
+				alt: " "
+			},
+		],
+		tags: [
+			{
+				name: "Digital Design",
+				color: "burntOrange",
+			},
+			{
+				name: "Wireframing",
+				color: "burntOrange",
+			},
+			{
+				name: "Uni Work",
+				color: "burntOrange",
+			},
+		],
+	},
+	{
+		title: "O-Ring Infographic",
+		cover: ORingInformation,
+		content: [
+			{
+				src: ORingInformation2,
+				alt: " "
+			},
+		],
+		tags: [
+			{
+				name: "Digital Design",
+				color: "burntOrange",
+			},
+			{
+				name: "Photoshop",
+				color: "burntOrange",
+			},
+			{
+				name: "Infographics",
+				color: "burntOrange",
+			},
+		],
+	},
+	{
+		title: "Nottingham RockSoc",
+		cover: RockSoc1,
+		content: [
+			{
+				src: RockSoc1,
+				alt: " "
+			},
+			{
+				src: RockSoc2,
+				alt: " "
+			},
+			{
+				src: RockSoc3,
+				alt: " "
+			},
+		],
+		tags: [
+			{
+				name: "Print Design",
+				color: "burntOrange",
+			},
+			{
+				name: "Photoshop",
+				color: "burntOrange",
+			},
+			{
+				name: "Branding",
+				color: "burntOrange",
+			},
+			{
+				name: "Posters",
+				color: "burntOrange",
+			},
+			{
+				name: "Album Cover",
+				color: "burntOrange",
+			},
+		],
+	},
+	{
+		title: "Stereocandy",
+		cover: Stereocandy1,
+		content: [
+			{
+				src: Stereocandy1,
+				alt: " "
+			},
+			{
+				src: Stereocandy2,
+				alt: " "
+			},
+			{
+				src: Stereocandy3,
+				alt: " "
+			},
+			{
+				src: Stereocandy4,
+				alt: " "
+			},
+			{
+				src: Stereocandy5,
+				alt: " "
+			},
+			{
+				src: Stereocandy6,
+				alt: " "
+			},
+		],
+		tags: [
+			{
+				name: "Print Design",
+				color: "burntOrange",
+			},
+			{
+				name: "Photoshop",
+				color: "burntOrange",
+			},
+			{
+				name: "Branding",
+				color: "burntOrange",
+			},
+			{
+				name: "Posters",
+				color: "burntOrange",
+			},
+			{
+				name: "Album Cover",
+				color: "burntOrange",
+			},
+		],
+	},
+	{
+		title: "NCASE",
+		cover: NCASE,
+		content: [
+			{
+				src: NCASE,
+				alt: "NCASE Logo"
+			},
+		],
+		tags: [
+			{
+				name: "Digital Design",
+				color: "burntOrange",
+			},
+			{
+				name: "Photoshop",
+				color: "burntOrange",
+			},
+			{
+				name: "Branding",
+				color: "burntOrange",
+			},
+		],
+	},
+	{
+		title: "Team Revolution",
+		cover: TeamRevolution1,
+		content: [
+			{
+				src: TeamRevolution1,
+				alt: " "
+			},
+			{
+				src: TeamRevolution2,
+				alt: " "
+			},
+		],
+		tags: [
+			{
+				name: "Digital Design",
+				color: "burntOrange",
+			},
+			{
+				name: "Photoshop",
+				color: "burntOrange",
+			},
+			{
+				name: "Branding",
+				color: "burntOrange",
+			},
+		],
+	},
+	{
+		title: "Wrath Poster",
+		cover: WrathPoster,
+		content: [
+			{
+				src: WrathPoster,
+				alt: " "
+			},
+		],
+		tags: [
+			{
+				name: "Print Design",
+				color: "burntOrange",
+			},
+			{
+				name: "Photoshop",
+				color: "burntOrange",
+			},
+			{
+				name: "Uni Work",
+				color: "burntOrange",
+			},
+		],
+	},
 	{
 		title: "Hellfire GFX - YouTube Backgrounds",
 		cover: YouTube1,
@@ -96,6 +565,14 @@ export const ShowcaseItems = [
 			{
 				name: "Branding",
 				color: "burntOrange",
+			},
+			{
+				name: "HTML",
+				color: "black",
+			},
+			{
+				name: "CSS",
+				color: "black",
 			},
 		],
 	},

@@ -43,7 +43,7 @@ const Skills = () => (
                 </Section>
             </div>
         </div>
-        <Section background="almostBlack" className="row" fullWidth>
+        <Section background="skillCloudGrey" className="row" fullWidth>
             <MaxWidthContainer>
                 <div className="d-flex align-items-center justify-content-center flex-column">
                     <Heading as="h4" color="white" className="mb-4">Skill Cloud</Heading>

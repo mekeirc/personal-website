@@ -18,13 +18,12 @@ const Layout = () => (
         <FullWidthBase background="greyDarker">
             <Experience />
         </FullWidthBase>
-        <Showcase />
         <Skills />
+        <Showcase />
         <Contact />
         <Hobbies />
         <TopAlbums />
         <RecentTracks />
-        <Portfolio />
         <Footer />
     </React.Fragment> 
 );

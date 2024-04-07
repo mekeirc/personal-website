@@ -66,17 +66,17 @@ const Header = () => {
                     <MobileLink href="#about" alt="link1" onClick={ toggleMobileMenu }>
                         About
                     </MobileLink>
-                    <MobileLink href="#hobbies" alt="link1" onClick={ toggleMobileMenu }>
-                       Interests
+                    <MobileLink href="#experience" alt="link1" onClick={ toggleMobileMenu }>
+                        Experience
+                    </MobileLink>
+                    <MobileLink href="#showcase" alt="link1" onClick={ toggleMobileMenu }>
+                        Showcase
                     </MobileLink>
                     <MobileLink href="#skills" alt="link1" onClick={ toggleMobileMenu }>
                         Skills &amp; Tools
                     </MobileLink>
-                    <MobileLink href="#experience" alt="link1" onClick={ toggleMobileMenu }>
-                        Experience
-                    </MobileLink>
-                    <MobileLink href="#portfolio" alt="link1" onClick={ toggleMobileMenu }>
-                        Portfolio
+                    <MobileLink href="#hobbies" alt="link1" onClick={ toggleMobileMenu }>
+                       Interests
                     </MobileLink>
                 </div>
             </MobileMenu>

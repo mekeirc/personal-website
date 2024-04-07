@@ -19,15 +19,31 @@ export const FullWidthBase = styled.div(({ theme, background }) => css`
 	background: ${theme.colors[background]};
 `);
 
-const ShowcaseBase = ({ children }) => <div className="d-flex flex-row flex-wrap my-5">{children}</div>;
+const ShowcaseCover = styled.img(({ theme }) => css`
+	height: 20vh;
+	
+	@media screen and (min-width: ${theme.breakPoints.md}){
+		height: 15vh;
+		height: 15vh;
+	}
+`);
+
+const ButtonBase = styled.button(({ theme }) => css`
+	border: 5px solid ${theme.colors.black};
+	
+	&:focus {
+		outline-color: ${theme.colors.burntOrange};
+	}
+`);
+
+const ShowcaseBase = ({ children }) => <div className="d-flex flex-row flex-wrap my-3">{children}</div>;
 
 const ShowcaseCard = ({ title, tags, onClick, cover }) => (
-	<button onClick={onClick} className="col-12 col-lg-6 col-xl-4 p-0 border-0 rounded shadow-none">
-		<div>
-			<CardBase className="h-100 w-100 d-flex flex-column justify-content-between">
-				<img src={cover} />
-				<div class="wrapper p-3">
-					<div className="row d-fixed">
+	<ButtonBase onClick={onClick} className="col-12 col-md-6 col-lg-6 col-xl-4 col-xxl-3 p-3 mb-1 bg-white">
+			<CardBase className="h-100 w-100 d-flex flex-column">
+				<ShowcaseCover src={cover} className="w-100" />
+				<div class="pt-3">
+					<div className="row">
 						<Heading className="text-start" as="h4" color="black">
 							{title}
 						</Heading>
@@ -41,13 +57,12 @@ const ShowcaseCard = ({ title, tags, onClick, cover }) => (
 					</div>
 				</div>
 			</CardBase>
-		</div>
-	</button>
+	</ButtonBase>
 );
 
 const Showcase = () => {
 	const [isOpen, setIsOpen] = useState(false);
-	const [modalContent, setModalContent] = useState([]);
+	const [modalContent, setModalContent] = useState(ShowcaseItems[0]);
 	const toggle = () => (setIsOpen(!isOpen));
 	const toggleModalContent = (item) => (setModalContent(item));
 
@@ -58,10 +73,10 @@ const Showcase = () => {
 	);
 
 	return (
-		<Section background="black">
+		<Section background="black" id="showcase">
 			<MaxWidthContainer background="black">
 				<Section background="black" className="px-0">
-					<Heading color="burntOrange">Showcase</Heading>
+					<Heading color="sunburstOrange" className="mb-4">Showcase</Heading>
 					<ShowcaseBase>
 						{ShowcaseItems.map((item) => (
 							<ShowcaseCard title={item.title} tags={item.tags} cover={item.cover} onClick={() => { toggleModalContent(item); toggle();}} />
@@ -69,14 +84,16 @@ const Showcase = () => {
 					</ShowcaseBase>
 				</Section>
 			</MaxWidthContainer>
-			<Modal isOpen={isOpen} toggle={toggle} size="xl" >
-				<ModalHeader toggle={toggle} close={closeBtn}>{modalContent.title}</ModalHeader>
-				<ModalBody className="w-100">
-					{modalContent.content.map((item) => (
-						<img src={item.src} alt={item.alt} className="w-100 pb-3" />
-					))}
-				</ModalBody>
-			</Modal>
+			{modalContent.content && (
+				<Modal isOpen={isOpen} toggle={toggle} size="lg" >
+					<ModalHeader toggle={toggle} close={closeBtn}>{modalContent.title}</ModalHeader>
+					<ModalBody className="w-100">
+						{modalContent.content.map((item) => (
+							<img src={item.src} alt={item.alt} className="w-100 pb-3" />
+						))}
+					</ModalBody>
+				</Modal>
+			)}
 		</Section>
 	);
 };

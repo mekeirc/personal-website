@@ -122,7 +122,7 @@ const RoleCard = ({ role, company, duration, location, type, description, tags }
 );
 
 const Experience = () => (
-	<MaxWidthContainer>
+	<MaxWidthContainer id="experience">
 		<Section background="greyDarker">
 			<Heading color="burntOrange">Experience</Heading>
 			<ExperienceBase>

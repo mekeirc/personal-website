@@ -78,7 +78,7 @@ const Footer = () => (
                 </div>
             </div>
         </Section>
-        <Section background="white">
+        <Section background="lightGrey">
             <div className="row justify-content-center">
                 <div className="col-12 col-sm-6 col-md-4 col-lg-3 col-xxl-2 text-center mb-5 mb-md-0">
                     <a

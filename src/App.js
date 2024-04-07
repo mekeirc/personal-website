@@ -20,7 +20,8 @@ const theme = {
         darkOrange: '#B25500',
         greyBorder2: 'rgba(234, 234, 234, 0.7)',
         greyDarker: 'rgb(246 246 246)',
-        cardBorder: '#dddddd'
+        cardBorder: '#dddddd',
+        skillCloudGrey: '#161616'
     },
     fonts: {
         primary: 'Cerebri Sans, Helvetica, sans-serif'
@@ -53,8 +54,6 @@ export function App() {
                 <Router>
                     <Routes>
                         <Route path="/" element={ <Layout /> } />
-                        <Route path="/portfolio" element={ <PortfolioPage /> } />
-                        <Route path="/case-studies/lumos" element={ <Lumos /> } />
                     </Routes>
                 </Router>
             </ThemeProvider>
