@@ -34,7 +34,7 @@ export const Section = styled.section(({ theme, background, bordered, lessPaddin
     `}
 `);
 
-export const MaxWidthContainer = styled.div(({ theme, background }) => css`
+export const MaxWidthContainer = styled.div(({ theme }) => css`
     width: 100%;
     padding: 0;
     

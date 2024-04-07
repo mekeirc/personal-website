@@ -4,12 +4,44 @@ export const apiFormat = 'json';
 export const extendedApi = true;
 export const apiLimit = 24;
 
+import YouTube1 from '../images/work/optimised/yt_Fuad_Oxideon.jpg';
+
 export const queryStrings = {
     ADZOOMA: 'adzooma',
     RIGHTINDEM: 'rightindem',
     HELLFIRE_GFX: 'hellfiregfx',
     BUYING_BUTLER: 'buyingbutler',
  }
+
+export const ShowcaseItems = [
+	{
+		title: "Hellfire GFX - YouTube Backgrounds",
+		content: [
+			{
+				src: YouTube1,
+				alt: ""
+			},
+			{
+				src: YouTube1,
+				alt: ""
+			}
+		],
+		tags: [
+			{
+				name: "Digital Design",
+				color: "burntOrange",
+			},
+			{
+				name: "Photoshop",
+				color: "burntOrange",
+			},
+			{
+				name: "Branding",
+				color: "burntOrange",
+			},
+		],
+	},
+];
 
 export const JobList = [
 	{

@@ -9,6 +9,7 @@ import Portfolio from '../components/portfolio';
 import Footer from '../components/footer';
 import { Hero } from '../components/homepage';
 import Contact from '../components/contact';
+import Showcase from '../components/showcase';
 
 const Layout = () => (
     <React.Fragment>
@@ -17,6 +18,7 @@ const Layout = () => (
         <FullWidthBase background="greyDarker">
             <Experience />
         </FullWidthBase>
+        <Showcase />
         <Skills />
         <Contact />
         <Hobbies />
