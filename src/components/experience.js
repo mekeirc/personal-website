@@ -29,8 +29,6 @@ const BoldTitle = styled(Paragraph)`
 	font-weight: normal;
 `;
 
-
-
 const ExperienceBase = ({ children }) => <div className="d-flex flex-row flex-wrap my-5">{children}</div>;
 
 const RoleCard = ({ role, company, duration, location, type, description, tags }) => (

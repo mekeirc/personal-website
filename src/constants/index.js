@@ -4,7 +4,16 @@ export const apiFormat = 'json';
 export const extendedApi = true;
 export const apiLimit = 24;
 
-import YouTube1 from '../images/work/optimised/yt_Fuad_Oxideon.jpg';
+// Showcase Imports
+import TDALogo from '../images/work/optimised/TDA-Logo-(FINAL).jpg';
+import TDASite from '../images/work/optimised/tdasite1.png';
+import YouTube1 from '../images/work/optimised/yt_hellfiregfx.png';
+import YouTube2 from '../images/work/optimised/yt_Fuad_Oxideon.jpg';
+import YouTube3 from '../images/work/optimised/yt_nZoGaming.png';
+import YouTube4 from '../images/work/optimised/yt_XzKRaZeDzX-2.png';
+import YouTube5 from '../images/work/optimised/yt_genocide.jpg';
+import YouTube6 from '../images/work/optimised/yt_Mrmucho.png';
+import YouTube7 from '../images/work/optimised/yt_Vapourlife.png';
 
 export const queryStrings = {
     ADZOOMA: 'adzooma',
@@ -16,15 +25,64 @@ export const queryStrings = {
 export const ShowcaseItems = [
 	{
 		title: "Hellfire GFX - YouTube Backgrounds",
+		cover: YouTube1,
 		content: [
 			{
 				src: YouTube1,
-				alt: ""
+				alt: "HellfireGFX YouTube Background"
 			},
 			{
-				src: YouTube1,
-				alt: ""
-			}
+				src: YouTube2,
+				alt: "Fuad Oxideon YouTube Background"
+			},
+			{
+				src: YouTube3,
+				alt: "NZO Gaming YouTube Background"
+			},
+			{
+				src: YouTube4,
+				alt: "Krazed YouTube Background"
+			},
+			{
+				src: YouTube5,
+				alt: "Genocide YouTube Background"
+			},
+			{
+				src: YouTube6,
+				alt: "Mr Mucho YouTube Background"
+			},
+			{
+				src: YouTube7,
+				alt: "VapourLife YouTube Background"
+			},
+		],
+		tags: [
+			{
+				name: "Digital Design",
+				color: "burntOrange",
+			},
+			{
+				name: "Photoshop",
+				color: "burntOrange",
+			},
+			{
+				name: "Branding",
+				color: "burntOrange",
+			},
+		],
+	},
+	{
+		title: "The Deadly Alliance",
+		cover: TDALogo,
+		content: [
+			{
+				src: TDALogo,
+				alt: "TDA Logo"
+			},
+			{
+				src: TDASite,
+				alt: "TDA Site"
+			},
 		],
 		tags: [
 			{

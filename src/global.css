@@ -12,6 +12,5 @@
 .mt-128 { margin-top: 128px; }
 .mb-128 { margin-bottom: 128px; }
 
-.modal-open {
-    overflow: hidden;
-}
+.modal-open { overflow: hidden; }
+.modal-xl { max-width: 1920px; }
